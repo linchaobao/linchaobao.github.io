@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>Linchao Bao - CityU CS</title></head>
+<body style="margin: 0px auto; width: 960px;">
+<div style="text-align: center; font-family: Georgia;"><big><small><small><small><big style="font-style: italic;"><br>IEEE Conference on Computer
+Vision and Pattern Recognition (CVPR), 2014</big><br>
+<br>
+</small></small><span style="font-weight: bold;"><big>Fast Edge-Preserving
+PatchMatch for Large Displacement Optical Flow</big></span></small></big><span style="font-weight: bold;"><big><br>
+</big></span></div>
+<small><br style="font-family: Georgia;"></small>
+<div style="text-align: center; font-family: Georgia;"><big><small><a href="http://www.cs.cityu.edu.hk/%7Elinchabao2/">Linchao Bao</a>&nbsp;
+&nbsp; &nbsp; <a href="http://www.cs.cityu.edu.hk/%7Eqiyang/">Qingxiong Yang</a>
+&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; </small></big><big><small>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</small></big><big><small><a href="http://www.adobe.com/technology/people/san-jose/hailin-jin.html">Hailin
+Jin</a> &nbsp; &nbsp; </small></big><big><small>&nbsp;
+&nbsp;&nbsp;</small></big><big><small>&nbsp;
+</small></big><small><br>
+</small><big><small>&nbsp; City
+University of Hong Kong &nbsp; &nbsp; &nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Adobe Research &nbsp; &nbsp; </small></big><small><br>
+</small></div>
+<small><br style="font-family: Georgia;"><br style="font-family: Georgia;"></small>
+
+<div style="text-align: justify;"><span style="font-weight: bold; font-family: Georgia;">Abstract</span>
+<small><span style="font-family: Georgia;">&nbsp;</span> </small>&nbsp;<span style="font-style: italic;"><big style="font-family: Times New Roman,Times,serif;">We
+present a fast optical flow algorithm that can handle large
+displacement motions. Our algorithm is inspired by recent successes of
+local methods in visual correspondence searching as well as approximate
+nearest neighbor field algorithms. The main novelty is a fast
+randomized edge-preserving approximate nearest neighbor field algorithm
+which propagates self-similarity patterns in addition to offsets.
+Experimental results on public optical flow benchmarks show that our
+method is significantly faster than state-of-the-art methods without
+compromising on quality, especially when scenes contain large motions.</big></span><br><span style="font-style: italic;"></span></div><span style="font-style: italic;">
+<br>
+</span><small><br style="font-family: Georgia;"></small>
+<span style="font-weight: bold; font-family: Georgia;">Downloads</span><small><br style="font-family: Georgia;"></small>
+<hr style="width: 100%; height: 2px; font-family: Georgia;"><big style="font-family: Georgia;"><small><small>1<small>.
+</small></small>&nbsp;Paper [<a href="cvpr2014_eppm_flow.pdf">PDF (5.4MB)</a>]<br>
+2. Win32 CUDA Binary Executable (require CUDA-capable NVIDIA graphics card) [<a href="cvpr2014_eppm_win32_bin.zip">zip
+(9.1MB)</a> | <a href="cvpr2014_eppm_win32_bin_README.txt">README</a>]<br>
+3. Win32 "flo" File Browser (GUI tool for visulizing flow results) [<a href="FloFileBrowser_win32.zip">zip (4.6MB)</a> | <a href="FloFileBrowserREADME.txt">README</a> | <a href="http://vision.middlebury.edu/flow/submit/">Middlebury "flo" format</a>]<br>
+4. Supplementary Materials (more results) [<a href="cvpr2014_eppm_flow_supplementary.pdf">PDF (23.5MB)</a>]<br>5. Poster [<a href="cvpr2014-eppm-poster.pdf">PDF (0.8MB)</a>]<br>6. Journal Extension (IEEE Trans. on Image Processing) [<a href="tip2014-eppm.pdf">PDF (24MB)</a> | <a href="tip2014-eppm-lowres.pdf">low-res. PDF (740KB)</a>] <span style="color: red; font-weight: bold;">(new)</span><br>7. Matlab Mex code (require CUDA-capable NVIDIA graphics card, for&nbsp;Matlab R2013a/Win64) [<a href="EPPM_Matlab_mexw64.zip">mexw64 (2.5MB)</a>]<span style="color: red; font-weight: bold;"> (new)</span><br></small>
+</big><small><br style="font-family: Georgia;"><br style="font-family: Georgia;"></small>
+<span style="font-weight: bold; font-family: Georgia;">Motivation</span><span style="font-weight: bold;"><br></span><hr style="width: 100%; height: 2px; font-family: Georgia;"><div style="text-align: justify;"><big style="font-family: Georgia;"><small>We
+use approximate nearest neighbor field (NNF) for large displacement
+optical flow estimation in this work. NNF is a correspondence field
+indicating pairs of image patches from two images which are closest in
+terms of some patch distance. There is no limitation on the relative
+distance between a pair of closest patches which makes NNF a good
+source of information for handling large displacement motions. Although
+exact NNF is computationally expensive to compute, there exist
+efficient approximate algorithms, such as PatchMatch [1]. In order to
+eliminate matching ambiguities, a large patch size is usually needed
+for optical flow estimation. But increasing patch size leads to two
+problems which are motion boundary preservation and algorithm speed. We
+address the former problem by introducing a novel edge-preserving
+version of PatchMatch and the latter one by developing a fast
+approximate algorithm. </small></big><br></div><span style="font-weight: bold;"><br></span><small><br style="font-family: Georgia;"><span style="font-weight: bold; font-family: Georgia;"><big style="font-family: Georgia;">Edge-Preserving PatchMatch</big><br></span></small>
+<hr style="width: 100%; height: 2px; font-family: Georgia;"><div style="text-align: justify;"><span style="font-family: Georgia;">Instead of
+computing patch distance using Euclidean distance, we use the </span><span style="font-style: italic; font-family: Georgia;">bilateral
+weighted</span><span style="font-family: Georgia;"> [2] patch distance when computing matching cost. When the
+patch size is large, the advantage of using bilateral weighted patch
+distance is obvious.</span><br></div><div style="text-align: center;"><img style="width: 509px; height: 150px;" alt="Edge-Preserving PatchMatch" src="imgs/edgepreserving.JPG"><br></div><br style="font-family: Georgia;"><small><br style="font-family: Georgia;"><span style="font-weight: bold; font-family: Georgia;"><big>Fast Algorithm<br></big></span></small><hr style="width: 100%; height: 2px; font-family: Georgia;"><div style="text-align: justify;"><span style="font-family: Georgia;">Notice
+that although PatchMatch is very fast for small patch size, it is
+actually much slower when increasing patch size. Other choices of
+computing NNF, like CSH [3] or KD-Tree based algorithm [4], cannot be
+directly applied to&nbsp;bilateral weighted patch matching (actually,
+CSH and KD-Tree based algorithm is not suitable for optical flow
+estimation since their results is targeted on minimizing reconstruction
+error and the NNF results are usually too messy). Our solution is,
+using less pixels when computing patch distance in PatchMatch. </span><br style="font-family: Georgia;"><br style="font-family: Georgia;"><span style="font-family: Georgia;">We
+notice that, due to the range kernel employed in the bilateral weighted
+patch distance, the major portion of the matching cost is contributed
+by pixels that are similar to the center pixel. This suggests a natural
+way to accelerate the matching cost computation which is that we simply
+ignore dissimilar pixels to center pixel. We employ an additional
+scheme similar to the idea of propagating offset in PatchMatch, which
+is, propagating the selected pixels! Specifically, the algorithm is as
+follows: for each pixel, we randomly select </span><span style="font-style: italic; font-family: Georgia;">n</span><span style="font-family: Georgia;"> pixels (</span><span style="font-style: italic; font-family: Georgia;">n</span><span style="font-family: Georgia;">
+is much smaller than the number of pixels inside the patch) from its
+surrounding patch and store them into a vector in the order of their
+similarity to the center pixel (namely, </span><span style="font-style: italic; font-family: Georgia;">self-similarity vector</span><span style="font-family: Georgia;">);
+then we scan the image from top-left to bottom-right, and, for each
+pixel, merge its adjacent pixels&#8217; vector into its own own vector
+(according to the stored pixels&#8217; similarity to current pixel);
+reversely scan and merge. After obtaining all the self-similarity
+vectors, we use the vector for computing NNF by PatchMatch algorithm.
+See more details in the paper. </span><br style="font-family: Georgia;"><br style="font-family: Georgia;"><span style="font-family: Georgia;">Besides,
+in order to further
+accelerate the algorithm, we compute the NNF in a downsampled version
+of the original image and then use bilateral upsampling [5] with local
+refinement to get the flow in original resolution. The downsampled
+image should not be too small in order to capture fine scale details.
+</span><br></div><small><span style="font-weight: bold; font-family: Georgia;"><big><br></big></span></small><span style="font-weight: bold;"></span><small><br style="font-family: Georgia;"><span style="font-weight: bold; font-family: Georgia;"><big>Pipeline</big><br></span></small>
+<hr style="width: 100%; height: 2px; font-family: Georgia;"><div style="text-align: justify;"><span style="font-family: Georgia;">The NNF
+computation is only the first step of optical flow estimation. Our
+whole pipeline is as follows (similar to [6] except subpixel refinement)</span><br style="font-family: Georgia;"><br style="font-family: Georgia;"><span style="font-family: Georgia;">Bi-directional
+NNF &nbsp;-&gt; &nbsp;Forward/Backward Consistency Check &nbsp;-&gt;
+&nbsp;Weighted Median Filtering &nbsp;-&gt; &nbsp;Subpixel Refinement. </span><br style="font-family: Georgia;"><br style="font-family: Georgia;"><span style="font-family: Georgia;">Our
+subpixel refinement uses a 2D paraboloid surface fitting algorithm on a
+higher resolution image (bicubic upsampled version of input image). See
+the following results for an example. Notice that (c) is computed from
+a higher resolution, while (b) is from the original resolution. In our
+algorithm, their&nbsp; computational cost is the same (except the cost
+of the bicubic upsampling of input image). </span><br></div><div style="text-align: center;"><img style="width: 557px; height: 144px;" alt="Subpixel Refinement" src="imgs/subpixel.JPG"><br></div><small><span style="font-weight: bold; font-family: Georgia;"><br><br><big>Performance<br></big></span></small><hr style="width: 100%; height: 2px; font-family: Georgia;"><div style="text-align: justify;"><span style="font-family: Georgia;">We
+implemented our whole algorithm using CUDA and performed experiments on
+a NVIDIA Geforce GTX 780 GPU. Our implementation can process a 640 <span style="font-family: Calibri;">x</span> 480
+image (0.3 Megapixel) in </span><span style="font-weight: bold; font-family: Georgia;">0.2</span><span style="font-family: Georgia;">
+seconds. The algorithm scales well with the size of the image. For
+example, it can process a 1024 <span style="font-family: Calibri;">x</span> 436 image (MPI Sintel data, 0.45
+Megapixel) in </span><span style="font-weight: bold; font-family: Georgia;">0.25</span><span style="font-family: Georgia;"> seconds. </span><br style="font-family: Georgia;"><span style="font-weight: bold; font-family: Georgia;"></span><br></div><small><br style="font-family: Georgia;"><span style="font-weight: bold; font-family: Georgia;"><big>Results on Benchmarks (shown as "EPPM")</big><br></span></small>
+<hr style="width: 100%; height: 2px; font-family: Georgia;"><div style="text-align: justify;"><span style="font-family: Georgia;">We
+evaluated our method on three benchmarks (see the following links).
+Note that our method is much faster than the other top
+performers.&nbsp; </span><br style="font-family: Georgia;"></div><small style="font-family: Georgia;"><small><small>&nbsp;</small></small></small><br style="font-family: Georgia;"><span style="font-family: Georgia;">1. </span><a style="font-family: Georgia;" target="_blank" href="http://sintel.is.tue.mpg.de/results">MPI Sintel</a><span style="font-family: Georgia;"> </span><br style="font-family: Georgia;"><span style="font-family: Georgia;">2. </span><a style="font-family: Georgia;" target="_blank" href="http://www.cvlibs.net/datasets/kitti/eval_stereo_flow.php?benchmark=flow&amp;error=5&amp;eval=all">KITTI</a><br style="font-family: Georgia;"><span style="font-family: Georgia;">3. </span><a style="font-family: Georgia;" target="_blank" href="http://vision.middlebury.edu/flow/eval/results/results-e1.php">Middlebury (EPPM without downsampling)</a><small><span style="font-weight: bold; font-family: Georgia;"><br><br></span></small><small><span style="font-weight: bold; font-family: Georgia;"></span></small><small><span style="font-weight: bold; font-family: Georgia;"></span></small><span style="font-weight: bold;"></span>
+<small><br style="font-family: Georgia;"></small>
+<span style="font-weight: bold;"><span style="font-family: Georgia;">Citation</span><br>
+</span>
+<hr style="width: 100%; height: 2px;"><span style="font-weight: bold;"></span>
+<pre>@inproceedings{bao2014cvpreppm,<br> title={Fast Edge-Preserving PatchMatch for Large Displacement Optical Flow},<br> author={Bao, Linchao and Yang, Qingxiong and Jin, Hailin},<br> booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br> year={2014},<br> pages={3534-3541}, <br> organization={IEEE}<br>}<br><br><span style="color: red; font-weight: bold;">Journal Extension (new)</span>:<br>@article{bao2014tipeppm,<br>  title={Fast Edge-Preserving PatchMatch for Large Displacement Optical Flow},<br>  author={Bao, Linchao and Yang, Qingxiong and Jin, Hailin},<br>  journal={Image Processing, IEEE Transactions on},<br>  year={2014},<br>  month={Dec},<br>  volume={23},<br>  number={12},<br>  pages={4996-5006},<br>  organization={IEEE}<br>}<br><br></pre>
+<small><span style="font-weight: bold; font-family: Georgia;"><big>References<br></big></span></small><hr style="width: 100%; height: 2px;"><div style="text-align: justify;"><span style="font-family: Georgia;">[1] Barnes </span><span style="font-style: italic; font-family: Georgia;">et al</span><span style="font-family: Georgia;">. </span><a style="font-family: Georgia;" target="_blank" href="http://gfx.cs.princeton.edu/pubs/Barnes_2009_PAR/index.php">Patchmatch: a randomized correspondence algorithm for structural image editing</a><span style="font-family: Georgia;">. In&nbsp; SIGGRAPH, 2009.</span><br style="font-family: Georgia;"><span style="font-family: Georgia;">[2] Yoon and Kweon.&nbsp;</span><a style="font-family: Georgia;" target="_blank" href="http://koasas.kaist.ac.kr/bitstream/10203/21048/1/KukJinYoon_TPAMI2006.pdf">Adaptive support-weight approach for correspondence search</a><span style="font-family: Georgia;">. TPAMI, 2006.</span><br style="font-family: Georgia;"><span style="font-family: Georgia;">[3]&nbsp;Korman and&nbsp;Avidan. </span><a style="font-family: Georgia;" target="_blank" href="http://www.eng.tau.ac.il/%7Esimonk/CSH/">Coherency sensitive hashing</a><span style="font-family: Georgia;">. In ICCV, 2011.</span><br style="font-family: Georgia;"><span style="font-family: Georgia;">[4]&nbsp;He and&nbsp;Sun. </span><a style="font-family: Georgia;" target="_blank" href="http://research.microsoft.com/en-us/um/people/kahe/publications/cvpr12nnf.pdf">Computing nearest-neighbor fields via propagation-assisted kd-trees</a><span style="font-family: Georgia;">. In CVPR, 2012.</span><br style="font-family: Georgia;"><span style="font-family: Georgia;">[5]&nbsp;Yang </span><span style="font-style: italic; font-family: Georgia;">et al</span><span style="font-family: Georgia;">. </span><a style="font-family: Georgia;" target="_blank" href="http://www.cs.cityu.edu.hk/%7Eqiyang/">Spatial-depth super resolution for range images</a><span style="font-family: Georgia;">. In CVPR, 2007.</span><br style="font-family: Georgia;"><span style="font-family: Georgia;">[6] Rhemann </span><span style="font-style: italic; font-family: Georgia;">et al</span><span style="font-family: Georgia;">. </span><a style="font-family: Georgia;" target="_blank" href="http://research.microsoft.com/pubs/147301/rhemannetal.pdf">Fast cost-volume filtering for visual correspondence and beyond</a><span style="font-family: Georgia;">. In CVPR, 2011.</span><br></div><br><small><span style="font-weight: bold; font-family: Georgia;"></span></small><small><br></small>
+
+</body></html>
