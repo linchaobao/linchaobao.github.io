@@ -1,0 +1,17 @@
+body {
+  font-family: "Georgia"; /*Georgia, Times New Roman, Times, Arial, Roboto, Verdana, Palatino Linotype*/
+}
+
+/* unvisited link */
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: purple;
+}
+
+li {
+	padding: 5pt 5pt 5pt 0pt;
+}
