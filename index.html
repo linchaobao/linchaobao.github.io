@@ -2,13 +2,27 @@
 <html>
 
 <head>
-    <title>Linchao Bao's Homepage</title>
-    <link rel="stylesheet" type="text/css" href="baostyle.css">
-    <base target="_blank">
+  <title>Linchao Bao's Homepage</title>
+  <link rel="stylesheet" type="text/css" href="baostyle.css">
+  <base target="_blank">
+  <style type="text/css">
+    table {
+      counter-reset: rowNumber;
+    }
+
+    table tr::before {
+      display: table-cell;
+      vertical-align: middle;
+      counter-increment: rowNumber;
+      content: counter(rowNumber) ".";
+      padding-right: 0.3em;
+      text-align: right;
+    }
+  </style>
 </head>
 
 <body style="margin: 0px auto; width: 1280px;">
-	
+
   <table align="center" border="0">
     <tbody>
       <tr>
@@ -23,7 +37,7 @@
             Ph.D.
             <br>
             <br>
-            Principal Research Scientist & Team Leader 
+            Principal Research Scientist & Team Leader
             <br>
             <a href="http://ai.tencent.com/ailab/">Tencent AI Lab</a>
           </p>
@@ -36,362 +50,656 @@
       </tr>
     </tbody>
   </table>
-    
+
   <hr align="left" size="4">
-  
-  <table align="center" border="0">
+
+
+  <!-- Bio -->
+  <h4>About Me</h4>
+  I am currently a Principal Research Scientist and Leader of Digital Human Team at
+  <a href="http://ai.tencent.com/ailab/">Tencent AI Lab</a>
+  in Shenzhen, China.
+  My research interests are in Computer Vision and Deep Learning.
+  I received my M.S. degree in Pattern Recognition and Intelligent Systems from
+  <a href="http://english.hust.edu.cn/">Huazhong University of Science &amp; Technology</a>
+  and Ph.D. degree in Computer Science from
+  <a href="http://www.cs.cityu.edu.hk/">City University of Hong Kong</a>.
+  My Ph.D. supervisor was
+  <a href="https://scholar.google.com.hk/citations?user=4WirkacAAAAJ&amp;hl=en">Dr. Qingxiong Yang</a>.
+  Prior to joining Tencent,
+  I spent a few months working on mapping and localization algorithms for autonomous driving at
+  <a href="http://www.didi-labs.com/">DiDi Research</a>.
+  Before that, I was an Algorithm Engineer in
+  <a href="https://www.dji.com/">DJI</a> working on imaging algorithms for drones.
+  During my Ph.D. period, I was a Research Intern at
+  <a href="https://research.adobe.com/">Adobe Research</a> (San Jose, CA, USA)
+  from Nov 2013 to May 2014, working with
+  <a href="https://research.adobe.com/person/hailin-jin/">Dr. Hailin Jin</a>
+  and <a href="https://research.adobe.com/person/byungmoon-kim/">Dr. Byungmoon Kim</a>.
+  I also worked in
+  <a href="http://helpx.adobe.com/photoshop/camera-raw.html">Adobe Camera Raw</a> team
+  for several months, working with <a href="https://www.flickr.com/photos/jbury/">Joshua Bury</a> and
+  <a href="http://people.csail.mit.edu/ericchan/">Eric Chan</a> on Adobe Photoshop and Lightroom algorithms.
+
+  <p>
+    <span style="background-color:rgb(255,255,0)">
+      <b>+. We are looking for <font color="#ff0000">research interns</font> (PhD/master students)
+        to work at Tencent AI Lab in Shenzhen.
+        The position requires full-time working for <font color="#ff0000">at least 6 months</font>.
+      </b>
+    </span>
+  </p>
+
+  <p>
+    <span style="background-color:rgb(255,255,0)">
+      <b>+. A few <font color="#ff0000">full-time researcher</font> positions are available
+        for <font color="#ff0000">fresh graduates</font> (PhD/master) with top publications.
+        Please drop me an email if you are interested.
+      </b>
+    </span>
+  </p>
+
+
+  <hr align="left" size="4">
+
+  <!-- publication -->
+  <h4>Publications [<a href="https://scholar.google.com.hk/citations?user=xQZMbkUAAAAJ&hl=en">Google Scholar
+      Citations</a>]</h4>
+
+  <table cellspacing="10">
     <tbody>
+
       <tr>
-        <td height="110" valign="top">
-          <h4>About Me</h4>
-          I am currently a Principal Research Scientist and Leader of Digital Human Team at 
-          <a href="http://ai.tencent.com/ailab/">Tencent AI Lab</a> 
-          in Shenzhen, China. 
-          My research interests are in Computer Vision and Deep Learning. 
-          I received my M.S. degree in Pattern Recognition and Intelligent Systems from
-          <a href="http://english.hust.edu.cn/">Huazhong University of Science &amp; Technology</a> 
-          and Ph.D. degree in Computer Science from 
-          <a href="http://www.cs.cityu.edu.hk/">City University of Hong Kong</a>. 
-          My Ph.D. supervisor was 
-          <a href="https://scholar.google.com.hk/citations?user=4WirkacAAAAJ&amp;hl=en">Dr. Qingxiong Yang</a>. 
-          Prior to joining Tencent, 
-          I spent a few months working on mapping and localization algorithms for autonomous driving at 
-          <a href="http://www.didi-labs.com/">DiDi Research</a>. 
-          Before that, I was an Algorithm Engineer in 
-          <a href="https://www.dji.com/">DJI</a> working on imaging algorithms for drones. 
-          During my Ph.D. period, I was a Research Intern at 
-          <a href="https://research.adobe.com/">Adobe Research</a> (San Jose, CA, USA) 
-          from Nov 2013 to May 2014, working with 
-          <a href="https://research.adobe.com/person/hailin-jin/">Dr. Hailin Jin</a> 
-          and <a href="https://research.adobe.com/person/byungmoon-kim/">Dr. Byungmoon Kim</a>. 
-          I also worked in 
-          <a href="http://helpx.adobe.com/photoshop/camera-raw.html">Adobe Camera Raw</a> team 
-          for several months, working with <a href="https://www.flickr.com/photos/jbury/">Joshua Bury</a> and 
-          <a href="http://people.csail.mit.edu/ericchan/">Eric Chan</a> on Adobe Photoshop and Lightroom algorithms. 
-          
-          <p>
-          <span style="background-color:rgb(255,255,0)">
-						<b>+. We are looking for <font color="#ff0000">research interns</font> (PhD/master students) 
-						to work at Tencent AI Lab in Shenzhen. 
-						The position requires full-time working for <font color="#ff0000">at least 6 months</font>. 
-						</b>
-					</span>
-					</p>
-					
-    			<p>
-    			<span style="background-color:rgb(255,255,0)">
-    				<b>+. A few <font color="#ff0000">full-time researcher</font> positions are available 
-    					for <font color="#ff0000">fresh graduates</font> (PhD/master) with top publications. 
-    					Please drop me an email if you are interested.
-    				</b>
-        	</span>
-        	</p>
+        <td>
+          <center><img width="200" src="teaser_figs/eccv22_realy.jpg"></center>
+        </td>
+        <td>
+          REALY: Rethinking the Evaluation of 3D Face Reconstruction.<br>
+          Zenghao Chai, Haoxian Zhang, Jing Ren, Di Kang, Zhengzhuo Xu, Xuefei Zhe, Chun Yuan*, <b>Linchao
+            Bao*</b>. (*corresponding author)<br>
+          <i>European Conference on Computer Vision (<b>ECCV</b>), 2022.</i><br>
+          [<a href="https://arxiv.org/abs/2203.09729">PDF</a> | <a href="https://www.realy3dface.com/">project
+            page</a>]
         </td>
       </tr>
 
-			<!-- publication -->
       <tr>
-          <td valign="top">
-      			<hr align="left" size="4">
-          	<h4>Publications [<a href="https://scholar.google.com.hk/citations?user=xQZMbkUAAAAJ&hl=en">Google Scholar Citations</a>]</h4>
-            <ol reversed>
-              <li>
-              	REALY: Rethinking the Evaluation of 3D Face Reconstruction.<br>
-                Zenghao Chai, Haoxian Zhang, Jing Ren, Di Kang, Zhengzhuo Xu, Xuefei Zhe, Chun Yuan*, <b>Linchao Bao*</b>. (*corresponding author)<br>
-                <i>European Conference on Computer Vision (<b>ECCV</b>), 2022.</i><br>
-                [<a href="https://arxiv.org/abs/2203.09729">PDF</a> | <a href="https://www.realy3dface.com/">project page</a>]
-              </li>
-              <li>
-              	CAR: Class-aware Regularizations for Semantic Segmentation.<br>
-                Ye Huang, Di Kang, Liang Chen, Xuefei Zhe, Wenjing Jia, <b>Linchao Bao</b>, Xiangjian He.<br>
-                <i>European Conference on Computer Vision (<b>ECCV</b>), 2022.</i><br>
-                [<a href="https://arxiv.org/abs/2203.07160">PDF</a> | <a href="https://github.com/edwardyehuang/CAR">code</a>]
-              </li>
-              <li>
-              	NeRFReN: Neural Radiance Fields With Reflections.<br>
-              	Yuan-Chen Guo, Di Kang, <b>Linchao Bao</b>, Yu He, Song-Hai Zhang.<br>
-                <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022.</i><br>
-                [<a href="https://openaccess.thecvf.com/content/CVPR2022/html/Guo_NeRFReN_Neural_Radiance_Fields_With_Reflections_CVPR_2022_paper.html">PDF</a> | <a href="https://bennyguo.github.io/nerfren/">project page</a>]
-              </li>
-              <li>
-                High-Fidelity 3D Digital Human Head Creation from RGB-D Selfies.<br>
-                <b>Linchao Bao*</b>, Xiangkai Lin*, Yajing Chen*, Haoxian Zhang*, Sheng Wang, Xuefei Zhe, Di Kang, Haozhi Huang, Xinwei Jiang, Jue Wang, Dong Yu, Zhengyou Zhang. (*equal contribution)<br>
-                <i>ACM Transactions on Graphics (<b>TOG</b>), 2022.</i><br>
-                [<a href="https://arxiv.org/abs/2010.05562">PDF</a> | <a href="https://tencent-ailab.github.io/hifi3dface_projpage/">project page</a> | <a href="https://github.com/tencent-ailab/hifi3dface">code</a>]
-              </li>
-	           <li>
-                Self-Supervised Video Representation Learning by Uncovering Spatio-temporal Statistics.<br>
-                Jiangliu Wang, Jianbo Jiao, <b>Linchao Bao*</b>, Shengfeng He, Wei Liu, Yunhui Liu*. (*corresponding author)<br>
-                <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>), 2022.</i><br>
-                [<a href="https://arxiv.org/abs/2008.13426">PDF</a> | <a href="https://github.com/laura-wang/video_repres_sts">code</a>]
-              </li>
-              <li>
-                ISF-GAN: An Implicit Style Function for High-Resolution Image-to-Image Translation.<br>
-                Yahui Liu, Yajing Chen, <b>Linchao Bao</b>, Nicu Sebe, Bruno Lepri, Marco De Nadai.<br>
-                <i>IEEE Transactions on Multimedia (<b>TMM</b>), 2022.</i><br>
-                [<a href="https://ieeexplore.ieee.org/document/9735294">PDF</a>]
-              </li>
-              <li>
-              	PVSeRF: Joint Pixel-, Voxel- and Surface-Aligned Radiance Field for Single-Image Novel View Synthesis.<br>
-              	Xianggang Yu, Jiapeng Tang, Yipeng Qin, Chenghong Li, <b>Linchao Bao</b>, Xiaoguang Han, Shuguang Cui.<br>
-                <i>ACM International Conference on Multimedia (<b>MM</b>), 2022.</i><br>
-                [<a href="https://arxiv.org/abs/2202.04879">PDF</a>]
-              </li>
-              <li>
-                Semi-signed Neural Fitting for Surface Reconstruction from Unoriented Point Clouds.<br>
-                Runsong Zhu, Di Kang, Ka-Hei Hui, Yue Qian, Xuefei Zhe, Zhen Dong, <b>Linchao Bao</b>, Chi-Wing Fu.<br>
-                <i>arXiv:2206.06715 [cs.CV], 2022.</i><br>
-                [<a href="https://arxiv.org/abs/2206.06715">PDF</a>]
-              </li>
-              <li>
-                Consistent 3D Hand Reconstruction in Video via self-supervised Learning.<br>
-                Zhigang Tu, Zhisheng Huang, Yujin Chen, Di Kang, <b>Linchao Bao</b>, Bisheng Yang, Junsong Yuan.<br>
-                <i>arXiv:2201.09548 [cs.CV], 2022.</i><br>
-                [<a href="https://arxiv.org/abs/2201.09548">PDF</a>]
-              </li>
-              <li>
-              	Audio2Gestures: Generating Diverse Gestures from Speech Audio with Conditional Variational Autoencoders.<br>
-              	Jing Li, Di Kang, Wenjie Pei, Xuefei Zhe, Ying Zhang, Zhenyu He, <b>Linchao Bao</b>.<br>
-                <i>IEEE International Conference on Computer Vision (<b>ICCV</b>), 2021.</i><br>
-                [<a href="https://arxiv.org/abs/2108.06720">PDF</a> | <a href="https://jingli513.github.io/audio2gestures/">code</a>]
-              </li>
-              <li>
-              	Model-based 3D Hand Reconstruction via Self-Supervised Learning.<br>
-              	Yujin Chen, Zhigang Tu, Di Kang, <b>Linchao Bao</b>, Ying Zhang, Xuefei Zhe, Ruizhi Chen, Junsong Yuan.<br>
-                <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2021.</i><br>
-                [<a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Chen_Model-Based_3D_Hand_Reconstruction_via_Self-Supervised_Learning_CVPR_2021_paper.pdf">PDF</a> | <a href="https://github.com/TerenceCYJ/S2HAND">code</a>]
-              </li>
-              <li>
-              	Smoothing the Disentangled Latent Style Space for Unsupervised Image-to-Image Translation.<br>
-              	Yahui Liu, Enver Sangineto, Yajing Chen, <b>Linchao Bao</b>, Haoxian Zhang, Nicu Sebe, Bruno Lepri, Wei Wang, Marco De Nadai.<br>
-                <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2021.</i><br>
-                [<a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Liu_Smoothing_the_Disentangled_Latent_Style_Space_for_Unsupervised_Image-to-Image_Translation_CVPR_2021_paper.pdf">PDF</a> | <a href="https://github.com/yhlleo/SmoothingLatentSpace">code</a>]
-              </li>
-              <li>
-                UniFaceGAN: A Unified Framework for Temporally Consistent Facial Video Editing.<br>
-                Meng Cao, Haozhi Huang, Hao Wang, Xuan Wang, Li Shen, Sheng Wang, <b>Linchao Bao*</b>, Zhifeng Li, Jiebo Luo. (*corresponding author)<br>
-                <i>IEEE Transactions on Image Processing (<b>TIP</b>), 2021.</i><br>
-                [<a href="https://ieeexplore.ieee.org/document/9464699">PDF</a>]
-              </li>
-              <li>
-                Multi-Stage Degradation Homogenization for Super-Resolution of Face Images With Extreme Degradations.<br>
-                Liang Chen, Jinshan Pan, Junjun Jiang, Jiawei Zhang, Zhen Han, <b>Linchao Bao*</b>. (*corresponding author)<br>
-                <i>IEEE Transactions on Image Processing (<b>TIP</b>), 2021.</i><br>
-                [<a href="https://ieeexplore.ieee.org/document/9451563">PDF</a>]
-              </li>
-              <li>
-                Joint Hand-object 3D Reconstruction from a Single Image with Cross-branch Feature Fusion.<br>
-                Yujin Chen, Zhigang Tu, Di Kang, Ruizhi Chen, <b>Linchao Bao*</b>, Zhengyou Zhang, Junsong Yuan. (*corresponding author)<br>
-                <i>IEEE Transactions on Image Processing (<b>TIP</b>), 2021.</i><br>
-                [<a href="https://arxiv.org/abs/2006.15561">PDF</a>]
-              </li>
-              <li>
-                Animatable Neural Radiance Fields from Monocular RGB Video.<br>
-                Jianchuan Chen, Ying Zhang, Di Kang, Xuefei Zhe, <b>Linchao Bao</b>, Xu Jia, Huchuan Lu.<br>
-                <i>arXiv:2106.13629 [cs.CV], 2021.</i><br>
-                [<a href="https://arxiv.org/abs/2106.13629">PDF</a>]
-              </li>
-              <li>
-                Self-supervised Learning of Detailed 3D Face Reconstruction.<br>
-                Yajing Chen, Fanzi Wu, Zeyu Wang, Yibing Song, Yonggen Ling, <b>Linchao Bao*</b>. (*corresponding author)<br>
-                <i>IEEE Transactions on Image Processing (<b>TIP</b>), 2020.</i><br>
-                [<a href="https://arxiv.org/abs/1910.11791">PDF</a> | <a href="https://github.com/cyj907/unsupervised-detail-layer">code</a>]
-              </li>
-              <li>
-                Laplacian Denoising Autoencoder.<br>
-                Jianbo Jiao, <b>Linchao Bao</b>, Yunchao Wei, Shengfeng He, Honghui Shi, Rynson W. H. Lau, Thomas S. Huang.<br>
-                <i>arXiv:2003.13623 [cs.CV], 2020.</i><br>
-                [<a href="https://arxiv.org/abs/2003.13623">PDF</a>]
-              </li>
-              <li>
-              	MVF-Net: Multi-View 3D Face Morphable Model Regression.<br>
-              	Fanzi Wu*, <b>Linchao Bao*</b>, Yajing Chen, Yonggen Ling, Yibing Song, Songnan Li, King N. Ngan, Wei Liu. (*equal contribution)<br>
-                <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2019.</i><br>
-                [<a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Wu_MVF-Net_Multi-View_3D_Face_Morphable_Model_Regression_CVPR_2019_paper.pdf">PDF</a> | <a href="https://github.com/Fanziapril/mvfnet">code</a>]
-              </li>
-              <li>
-              	MHP-VOS: Multiple Hypotheses Propagation for Video Object Segmentation.<br>
-                Shuangjie Xu, Daizong Liu, <b>Linchao Bao*</b>, Wei Liu, Pan Zhou*. (*corresponding author)<br>
-                <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2019. (<b>oral</b>)</i><br>
-                [<a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Xu_MHP-VOS_Multiple_Hypotheses_Propagation_for_Video_Object_Segmentation_CVPR_2019_paper.pdf">PDF</a> | <a href="https://github.com/shuangjiexu/MHP-VOS">code</a>]
-              </li>
-              <li>
-              	Self-supervised Spatio-temporal Representation Learning for Videos by Predicting Motion and Appearance Statistics.<br>
-                Jiangliu Wang, Jianbo Jiao, <b>Linchao Bao*</b>, Shengfeng He, Yunhui Liu, Wei Liu*. (*corresponding author)<br>
-                <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2019.</i><br>
-                [<a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Self-Supervised_Spatio-Temporal_Representation_Learning_for_Videos_by_Predicting_Motion_and_CVPR_2019_paper.pdf">PDF</a> | <a href="https://github.com/laura-wang/video_repres_mas">code</a>]
-              </li>
-              <li>
-              	Face Anti-Spoofing: Model Matters, So Does Data.<br>
-                Xiao Yang, Wenhan Luo, <b>Linchao Bao</b>, Yuan Gao, Dihong Gong, Shibao Zheng, Zhifeng Li, Wei Liu.<br>
-                <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2019.</i><br>
-                [<a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Yang_Face_Anti-Spoofing_Model_Matters_so_Does_Data_CVPR_2019_paper.pdf">PDF</a>]
-              </li>
-              <li>
-              	Joint Face Hallucination and Deblurring via Structure Generation and Detail Enhancement.<br>
-                Yibing Song, Jiawei Zhang, Lijun Gong, Shengfeng He, <b>Linchao Bao</b>, Jinshan Pan, Qingxiong Yang, Ming-Hsuan Yang.<br>
-                <i>International Journal of Computer Vision (<b>IJCV</b>), 2018.</i><br>
-                [<a href="https://arxiv.org/abs/1811.09019">PDF</a>]
-              </li>
-              <li>
-              	Modeling Varying Camera-IMU Time Offset in Optimization-Based Visual-Inertial Odometry.<br>
-                Yonggen Ling, <b>Linchao Bao</b>, Zequn Jie, Fengming Zhu, Ziyang Li, Shanmin Tang, Yongsheng Liu, Wei Liu, Tong Zhang.<br>
-                <i>European Conference on Computer Vision (<b>ECCV</b>), 2018.</i><br>
-                [<a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Yonggen_Ling_Modeling_Varying_Camera-IMU_ECCV_2018_paper.pdf">PDF</a>]
-              </li>
-              <li>
-              	CNN in MRF: Video Object Segmentation via Inference in A CNN-Based Higher-Order Spatio-Temporal MRF.<br>
-                <b>Linchao Bao</b>, Baoyuan Wu, Wei Liu.<br>
-                <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2018. (<b>spotlight oral</b>)</i><br>
-                [<a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Bao_CNN_in_MRF_CVPR_2018_paper.pdf">PDF</a>]
-              </li>
-              <li>
-              	VITAL: VIsual Tracking via Adversarial Learning.<br>
-                Yibing Song, Chao Ma, Xiaohe Wu, Lijun Gong, <b>Linchao Bao</b>, Wangmeng Zuo, Chunhua Shen, Rynson Lau, Ming-Hsuan Yang.<br>
-                <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2018. (<b>spotlight oral</b>)</i><br>
-                [<a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Song_VITAL_VIsual_Tracking_CVPR_2018_paper.pdf">PDF</a>]
-              </li>
-              <li>
-              	Dynamic Scene Deblurring Using Spatially Variant Recurrent Neural Networks.<br>
-                Jiawei Zhang, Jinshan Pan, Jimmy Ren, Yibing Song, <b>Linchao Bao</b>, Rynson Lau, Ming-Hsuan Yang.<br>
-                <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2018. (<b>spotlight oral</b>)</i><br>
-                [<a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhang_Dynamic_Scene_Deblurring_CVPR_2018_paper.pdf">PDF</a>]
-              </li>
-              <li>
-              	Class-Agnostic Video Object Segmentation without Semantic Re-Identification.<br>
-                Shuangjie Xu, <b>Linchao Bao</b>, Pan Zhou.<br>
-                <i>The 2018 DAVIS Challenge on Video Object Segmentation - CVPR Workshops (<b>CVPRW</b>), 2018.</i><br>
-                <i>(We achieved the <b>3rd</b> place out of 18 teams in the challenge!)</i><br>
-                [<a href="https://davischallenge.org/challenge2018/papers/DAVIS-Semisupervised-Challenge-3rd-Team.pdf">PDF</a>]
-              </li>
-              <li>
-              	Stylizing Face Images via Multiple Exemplars.<br>
-                Yibing Song, <b>Linchao Bao</b>, Shengfeng He, Qingxiong Yang, Ming-Hsuan Yang.<br>
-                <i>Computer Vision and Image Understanding (<b>CVIU</b>), 2017.</i><br>
-                [<a href="https://arxiv.org/abs/1708.08288">PDF</a>]
-              </li>
-              <li>
-              	Learning to Hallucinate Face Images via Component Generation and Enhancement.<br>
-                Yibing Song, Jiawei Zhang, Shengfeng He, <b>Linchao Bao</b>, Qingxiong Yang.<br>
-                <i>International Joint Conference on Artificial Intelligence (<b>IJCAI</b>), 2017.</i><br>
-                [<a href="https://arxiv.org/abs/1708.00223">PDF</a> | <a href="https://ybsong00.github.io/ijcai17_sr/index.html">project page</a>]
-              </li>
-              <li>
-              	Fast Preprocessing for Robust Face Sketch Synthesis.<br>
-                Yibing Song, Jiawei Zhang, <b>Linchao Bao</b>, Qingxiong Yang.<br>
-                <i>International Joint Conference on Artificial Intelligence (<b>IJCAI</b>), 2017.</i><br>
-                [<a href="https://arxiv.org/abs/1708.00224">PDF</a> | <a href="https://ybsong00.github.io/ijcai17_sketch/index.html">project page</a>]
-              </li>
-              <li>
-                Robust Piecewise-Constant Smoothing: M-Smoother Revisited.<br>
-                <b>Linchao Bao</b> and Qingxiong Yang.<br>
-                <i>arXiv:1410.7580 [cs.CV], 2014.</i><br>
-                [<a href="univfilter/arXiv14_MSmoother.pdf">PDF (7.5MB)</a> | <a href="univfilter/arXiv14_MSmoother_lowres.pdf">low-res. PDF (1.3MB)</a> | <a href="msmoother/index.html">project page</a> | <a href="univfilter/msmoother_matlabcode.zip">Matlab code</a> | <a href="univfilter/msmoother14bao.bib">BibTex</a>]
-              </li>
-              <li>
-                Fast Edge-Preserving PatchMatch for Large Displacement Optical Flow.<br>
-                <b>Linchao Bao</b>, Qingxiong Yang, Hailin Jin.<br>
-                <i>IEEE Transactions on Image Processing (<b>TIP</b>), 2014.</i><br>
-                [<a href="cvpr2014eppm/tip2014-eppm.pdf">PDF (24MB)</a> | <a href="cvpr2014eppm/tip2014-eppm-lowres.pdf">low-res. PDF (740KB)</a> | <a href="cvpr2014eppm/index.html">project page</a> | <a href="cvpr2014eppm/EPPM_Matlab_mexw64.zip">Matlab mexw64 code (2.5MB)</a> | <a href="https://github.com/linchaobao/EPPM">github code</a> | <a href="cvpr2014eppm/tip2014eppmflow.bib">BibTex</a>]
-              </li>
-              <li>
-                Real-Time Exemplar-Based Face Sketch Synthesis.<br>
-                Yibing Song, <b>Linchao Bao</b>, Qingxiong Yang, Ming-Hsuan Yang.<br>
-                <i>European Conference on Computer Vision (<b>ECCV</b>), 2014.</i><br>
-                [<a href="https://ybsong00.github.io/eccv14/song_eccv14_sketch.pdf">PDF (2.7MB)</a> | <a href="https://ybsong00.github.io/eccv14/index.html">project page</a> | <a href="eccv2014sketch/eccv2014song.bib">BibTeX</a>]
-              </li>
-              <li>
-                Fast Edge-Preserving PatchMatch for Large Displacement Optical Flow.<br>
-                <b>Linchao Bao</b>, Qingxiong Yang, Hailin Jin.<br>
-                <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2014.</i><br>
-                [<a href="cvpr2014eppm/cvpr2014_eppm_flow.pdf">PDF (5.4MB)</a> | <a href="cvpr2014eppm/index.html">project page</a> | <a href="cvpr2014eppm/EPPM_Matlab_mexw64.zip">Matlab mexw64 code (2.5MB)</a> | <a href="https://github.com/linchaobao/EPPM">github code</a> | <a href="cvpr2014eppm/cvpr2014eppmflow.bib">BibTeX</a>]
-              </li>
-              <li>
-                A Comparison of TV-L1 Optical Flow Solvers on GPU.<br>
-                <b>Linchao Bao</b>, Hailin Jin, Byungmoon Kim, Qingxiong Yang.<br>
-                <i>GPU Technology Conference (<b>GTC</b>), 2014. (poster)</i><br>
-                [<a href="gtc2014/TVL1flow_GTC2014_poster.pdf">PDF poster (200KB)</a> | <a href="gtc2014/TVL1flow_GTC2014_notes.pdf">PDF implementation notes (350KB)</a> | Matlab mex code (<a href="gtc2014/TVL1Flow_mexw64.zip">win64</a> | <a href="gtc2014/tvl1flow_bao_mex.zip">linux</a>) | <a href="gtc2014/gtc2014tvl1flow.bib">BibTeX</a>] 
-              </li>
-              <li>
-                Real-Time Video Decolorization Using Bilateral Filtering.<br>
-                Yibing Song, <b>Linchao Bao</b>, Qingxiong Yang.<br>
-                <i>IEEE Winter Conference on Applications of Computer Vision (<b>WACV</b>), 2014.</i><br>
-                [<a href="wacv2014/decolor_wacv2014.pdf">PDF (9.7MB)</a> | <a href="wacv2014/decolor_wacv2014_compressed.pdf">low-res. PDF (1.2MB)</a> | <a href="wacv2014/WACV2014decolor_slides.pptx">pptx slides (10.5MB)</a> | <a href="wacv2014/wacv2014decolor.bib">BibTeX</a>] 
-              </li>
-              <li>
-                Tree Filtering: Efficient Structure-Preserving Smoothing With a Minimum Spanning Tree.<br>
-                <b>Linchao Bao</b>, Yibing Song, Qingxiong Yang, Hao Yuan, Gang Wang.<br>
-                <i>IEEE Transactions on Image Processing (<b>TIP</b>), 2014.</i><br>
-                [<a href="treefilter/tip13treefilter.pdf">PDF (3.5MB)</a> | <a href="treefilter/tip13treefilter_lowres.pdf">low-res. PDF (950KB)</a> | <a href="treefilter/tip13treefilter-demo-mex64.zip">Matlab demo (mexw64/mexa64) (3MB)</a> | <a href="treefilter/tip13treefilter.bib">BibTeX</a>]
-              </li>
-              <li>
-                Decolorization: Is <font face="Courier New">rgb2gray()</font> Out?<br>
-                Yibing Song, <b>Linchao Bao</b>, Xiaobin Xu, Qingxiong Yang.<br>
-                <i>ACM SIGGRAPH Asia Technical Briefs, 2013.</i><br> 
-                [<a href="decolor/siga13tb.pdf">PDF (6.8MB)</a> | <a href="decolor/siga13tb_lowres.pdf">low-res. PDF (610KB)</a> | <a href="https://ybsong00.github.io/siga13tb/index.html">project page</a> | <a href="decolor/siga13tb.bib">BibTex</a>]
-              </li>
-              <li>
-                An Edge-Preserving Filtering Framework for Visibility Restoration.<br>
-                <b>Linchao Bao</b>, Yibing Song, Qingxiong Yang, Narendra Ahuja.<br>
-                <i>International Conference on Pattern Recognition (<b>ICPR</b>), 2012. (<b>oral</b>)</i><br>
-                [<a href="univfilter/icpr12bao.pdf">PDF (1.7MB)</a> | <a href="univfilter/icpr12bao.pptx">pptx slides (5MB)</a> | <a href="univfilter/icpr12bao_cppcode.zip">C++ code (haze removal) (2.3MB)</a> | <a href="univfilter/icpr12bao.bib">BibTeX</a>] 
-              </li>
-            </ol>
-          </td>
+        <td>
+          <center><img width="200" src="teaser_figs/eccv22_car.jpg"></center>
+        </td>
+        <td>
+          CAR: Class-aware Regularizations for Semantic Segmentation.<br>
+          Ye Huang, Di Kang, Liang Chen, Xuefei Zhe, Wenjing Jia, <b>Linchao Bao</b>, Xiangjian He.<br>
+          <i>European Conference on Computer Vision (<b>ECCV</b>), 2022.</i><br>
+          [<a href="https://arxiv.org/abs/2203.07160">PDF</a> | <a href="https://github.com/edwardyehuang/CAR">code</a>]
+        </td>
       </tr>
 
-			<!-- products -->
       <tr>
-        <td valign="top">
-          <hr align="left" size="4">
-          <h4>Shipped Products</h4>
-          <ul>
-            <li>
-                <a href="https://www.dji.com/spark">DJI Spark Drone</a>: IMU-based Electronic Image Stabilization (EIS).<br>
-                <i>I led a team that developed the IMU-based EIS system for DJI Spark drone during 2015~2016.</i><br>
-            </li>
-            <li>
-                <a href="https://www.dji.com/osmo">DJI OSMO</a>: Panorama Stitching on Mobile Phones.<br>
-                <i>I led a team that developed the panorama photography mode for DJI OSMO in 2015.</i><br>
-            </li>
-            <li>
-                <a href="https://www.dji.com/phantom">DJI Phantom 3</a> & <a href="https://www.dji.com/inspire-1">Inspire 1</a>: HDR Photography.<br>
-                <i>I developed the HDR mode for the cameras on DJI Phantom 3 and Inspire 1 drones in 2015.</i><br>
-            </li>
-            <li>
-                <a href="http://blogs.adobe.com/lightroomjournal/2015/04/spring-updates-to-cc-photography.html">Adobe Lightroom 6.0</a> & <a href="http://blogs.adobe.com/lightroomjournal/2015/04/camera-raw-9-now-available.html">Photoshop Camera Raw 9.0</a>: HDR & Panorama Merge.<br>
-                <i>Together with Joshua Bury, we developed the algorithms for HDR & Panorama Merge in Adobe Lightroom 6.0 and Photoshop Camera Raw 9.0 in 2014.</i><br>
-            </li>
-            <li>
-                <a href="https://blogs.adobe.com/creativecloud/premiere-pro-cc-ibc/?segment=dva">Adobe Premiere Pro CC</a>: <a href="https://www.youtube.com/watch?v=3YE5tff8pqg">GPU optimized Optical Flow Time Remapping</a>.<br>
-                <i>I developed the algorithm for GPU optimized Optical Flow Time Remapping in Adobe Premiere Pro CC in 2014.</i><br>
-            </li>
-          </ul>
+        <td>
+          <center><img width="200" src="teaser_figs/cvpr22_nerfren.jpg"></center>
+        </td>
+        <td>
+          NeRFReN: Neural Radiance Fields With Reflections.<br>
+          Yuan-Chen Guo, Di Kang, <b>Linchao Bao</b>, Yu He, Song-Hai Zhang.<br>
+          <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022.</i><br>
+          [<a
+            href="https://openaccess.thecvf.com/content/CVPR2022/html/Guo_NeRFReN_Neural_Radiance_Fields_With_Reflections_CVPR_2022_paper.html">PDF</a>
+          | <a href="https://bennyguo.github.io/nerfren/">project page</a>]
         </td>
       </tr>
-      
-			<!-- vspace -->
+
       <tr>
-        <td valign="top">
-        	<br>
-        	<br>
+        <td>
+          <center><img width="200" src="teaser_figs/tog22_hifi3dface.jpg"></center>
         </td>
-    	</tr>
-    	
-			<!-- visit counter -->
-			<!--
-      <tr>
-        <td valign="top">
-          <hr align="left" size="4">
-          <div align="center">
-            <a href="http://www.amazingcounter.com"><img src="http://cc.amazingcounters.com/counter.php?i=3014469&amp;c=9043720" alt="Free Web Counters" border="0"></a>
-            <br><a href="http://www.1-coupons.com" style="display: none;">1-Coupons.com</a></div>
+        <td>
+          High-Fidelity 3D Digital Human Head Creation from RGB-D Selfies.<br>
+          <b>Linchao Bao*</b>, Xiangkai Lin*, Yajing Chen*, Haoxian Zhang*, Sheng Wang, Xuefei Zhe, Di Kang, Haozhi
+          Huang, Xinwei Jiang, Jue Wang, Dong Yu, Zhengyou Zhang. (*equal contribution)<br>
+          <i>ACM Transactions on Graphics (<b>TOG</b>), 2022.</i><br>
+          [<a href="https://arxiv.org/abs/2010.05562">PDF</a> | <a
+            href="https://tencent-ailab.github.io/hifi3dface_projpage/">project page</a> | <a
+            href="https://github.com/tencent-ailab/hifi3dface">code</a>]
         </td>
       </tr>
-      -->
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/tpami22_selfsup.jpg"></center>
+        </td>
+        <td>
+          Self-Supervised Video Representation Learning by Uncovering Spatio-temporal Statistics.<br>
+          Jiangliu Wang, Jianbo Jiao, <b>Linchao Bao*</b>, Shengfeng He, Wei Liu, Yunhui Liu*. (*corresponding
+          author)<br>
+          <i>IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>), 2022.</i><br>
+          [<a href="https://arxiv.org/abs/2008.13426">PDF</a> | <a
+            href="https://github.com/laura-wang/video_repres_sts">code</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/tmm22_gan.jpg"></center>
+        </td>
+        <td>
+          ISF-GAN: An Implicit Style Function for High-Resolution Image-to-Image Translation.<br>
+          Yahui Liu, Yajing Chen, <b>Linchao Bao</b>, Nicu Sebe, Bruno Lepri, Marco De Nadai.<br>
+          <i>IEEE Transactions on Multimedia (<b>TMM</b>), 2022.</i><br>
+          [<a href="https://ieeexplore.ieee.org/document/9735294">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/acmmm22_nerf.jpg"></center>
+        </td>
+        <td>
+          PVSeRF: Joint Pixel-, Voxel- and Surface-Aligned Radiance Field for Single-Image Novel View Synthesis.<br>
+          Xianggang Yu, Jiapeng Tang, Yipeng Qin, Chenghong Li, <b>Linchao Bao</b>, Xiaoguang Han, Shuguang Cui.<br>
+          <i>ACM International Conference on Multimedia (<b>MM</b>), 2022.</i><br>
+          [<a href="https://arxiv.org/abs/2202.04879">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/arxiv22_pc.jpg"></center>
+        </td>
+        <td>
+          Semi-signed Neural Fitting for Surface Reconstruction from Unoriented Point Clouds.<br>
+          Runsong Zhu, Di Kang, Ka-Hei Hui, Yue Qian, Xuefei Zhe, Zhen Dong, <b>Linchao Bao</b>, Chi-Wing Fu.<br>
+          <i>arXiv:2206.06715 [cs.CV], 2022.</i><br>
+          [<a href="https://arxiv.org/abs/2206.06715">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/arxiv22_handselfsup.jpg"></center>
+        </td>
+        <td>
+          Consistent 3D Hand Reconstruction in Video via self-supervised Learning.<br>
+          Zhigang Tu, Zhisheng Huang, Yujin Chen, Di Kang, <b>Linchao Bao</b>, Bisheng Yang, Junsong Yuan.<br>
+          <i>arXiv:2201.09548 [cs.CV], 2022.</i><br>
+          [<a href="https://arxiv.org/abs/2201.09548">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/iccv21_gestures.jpg"></center>
+        </td>
+        <td>
+          Audio2Gestures: Generating Diverse Gestures from Speech Audio with Conditional Variational
+          Autoencoders.<br>
+          Jing Li, Di Kang, Wenjie Pei, Xuefei Zhe, Ying Zhang, Zhenyu He, <b>Linchao Bao</b>.<br>
+          <i>IEEE International Conference on Computer Vision (<b>ICCV</b>), 2021.</i><br>
+          [<a href="https://arxiv.org/abs/2108.06720">PDF</a> | <a
+            href="https://jingli513.github.io/audio2gestures/">code</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/cvpr21_handselfsup.jpg"></center>
+        </td>
+        <td>
+          Model-based 3D Hand Reconstruction via Self-Supervised Learning.<br>
+          Yujin Chen, Zhigang Tu, Di Kang, <b>Linchao Bao</b>, Ying Zhang, Xuefei Zhe, Ruizhi Chen, Junsong
+          Yuan.<br>
+          <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2021.</i><br>
+          [<a
+            href="https://openaccess.thecvf.com/content/CVPR2021/papers/Chen_Model-Based_3D_Hand_Reconstruction_via_Self-Supervised_Learning_CVPR_2021_paper.pdf">PDF</a>
+          | <a href="https://github.com/TerenceCYJ/S2HAND">code</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/cvpr21_gan.jpg"></center>
+        </td>
+        <td>
+          Smoothing the Disentangled Latent Style Space for Unsupervised Image-to-Image Translation.<br>
+          Yahui Liu, Enver Sangineto, Yajing Chen, <b>Linchao Bao</b>, Haoxian Zhang, Nicu Sebe, Bruno Lepri, Wei
+          Wang, Marco De Nadai.<br>
+          <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2021.</i><br>
+          [<a
+            href="https://openaccess.thecvf.com/content/CVPR2021/papers/Liu_Smoothing_the_Disentangled_Latent_Style_Space_for_Unsupervised_Image-to-Image_Translation_CVPR_2021_paper.pdf">PDF</a>
+          | <a href="https://github.com/yhlleo/SmoothingLatentSpace">code</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/tip21_unifacegan.jpg"></center>
+        </td>
+        <td>
+          UniFaceGAN: A Unified Framework for Temporally Consistent Facial Video Editing.<br>
+          Meng Cao, Haozhi Huang, Hao Wang, Xuan Wang, Li Shen, Sheng Wang, <b>Linchao Bao*</b>, Zhifeng Li, Jiebo
+          Luo. (*corresponding author)<br>
+          <i>IEEE Transactions on Image Processing (<b>TIP</b>), 2021.</i><br>
+          [<a href="https://ieeexplore.ieee.org/document/9464699">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/tip21_facesupres.jpg"></center>
+        </td>
+        <td>
+          Multi-Stage Degradation Homogenization for Super-Resolution of Face Images With Extreme Degradations.<br>
+          Liang Chen, Jinshan Pan, Junjun Jiang, Jiawei Zhang, Zhen Han, <b>Linchao Bao*</b>. (*corresponding
+          author)<br>
+          <i>IEEE Transactions on Image Processing (<b>TIP</b>), 2021.</i><br>
+          [<a href="https://ieeexplore.ieee.org/document/9451563">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/tip21_handobj.jpg"></center>
+        </td>
+        <td>
+          Joint Hand-object 3D Reconstruction from a Single Image with Cross-branch Feature Fusion.<br>
+          Yujin Chen, Zhigang Tu, Di Kang, Ruizhi Chen, <b>Linchao Bao*</b>, Zhengyou Zhang, Junsong Yuan.
+          (*corresponding author)<br>
+          <i>IEEE Transactions on Image Processing (<b>TIP</b>), 2021.</i><br>
+          [<a href="https://arxiv.org/abs/2006.15561">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/arxiv21_bodynerf.jpg"></center>
+        </td>
+        <td>
+          Animatable Neural Radiance Fields from Monocular RGB Video.<br>
+          Jianchuan Chen, Ying Zhang, Di Kang, Xuefei Zhe, <b>Linchao Bao</b>, Xu Jia, Huchuan Lu.<br>
+          <i>arXiv:2106.13629 [cs.CV], 2021.</i><br>
+          [<a href="https://arxiv.org/abs/2106.13629">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/tip20_detail3dface.jpg"></center>
+        </td>
+        <td>
+          Self-supervised Learning of Detailed 3D Face Reconstruction.<br>
+          Yajing Chen, Fanzi Wu, Zeyu Wang, Yibing Song, Yonggen Ling, <b>Linchao Bao*</b>. (*corresponding
+          author)<br>
+          <i>IEEE Transactions on Image Processing (<b>TIP</b>), 2020.</i><br>
+          [<a href="https://arxiv.org/abs/1910.11791">PDF</a> | <a
+            href="https://github.com/cyj907/unsupervised-detail-layer">code</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/arxiv20_lapselfsup.jpg"></center>
+        </td>
+        <td>
+          Laplacian Denoising Autoencoder.<br>
+          Jianbo Jiao, <b>Linchao Bao</b>, Yunchao Wei, Shengfeng He, Honghui Shi, Rynson W. H. Lau, Thomas S.
+          Huang.<br>
+          <i>arXiv:2003.13623 [cs.CV], 2020.</i><br>
+          [<a href="https://arxiv.org/abs/2003.13623">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/cvpr19_mvfnet.jpg"></center>
+        </td>
+        <td>
+          MVF-Net: Multi-View 3D Face Morphable Model Regression.<br>
+          Fanzi Wu*, <b>Linchao Bao*</b>, Yajing Chen, Yonggen Ling, Yibing Song, Songnan Li, King N. Ngan, Wei Liu.
+          (*equal contribution)<br>
+          <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2019.</i><br>
+          [<a
+            href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Wu_MVF-Net_Multi-View_3D_Face_Morphable_Model_Regression_CVPR_2019_paper.pdf">PDF</a>
+          | <a href="https://github.com/Fanziapril/mvfnet">code</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/cvpr19_mhpvos.jpg"></center>
+        </td>
+        <td>
+          MHP-VOS: Multiple Hypotheses Propagation for Video Object Segmentation.<br>
+          Shuangjie Xu, Daizong Liu, <b>Linchao Bao*</b>, Wei Liu, Pan Zhou*. (*corresponding author)<br>
+          <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2019. (<b>oral</b>)</i><br>
+          [<a
+            href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Xu_MHP-VOS_Multiple_Hypotheses_Propagation_for_Video_Object_Segmentation_CVPR_2019_paper.pdf">PDF</a>
+          | <a href="https://github.com/shuangjiexu/MHP-VOS">code</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/cvpr19_selfsup.jpg"></center>
+        </td>
+        <td>
+          Self-supervised Spatio-temporal Representation Learning for Videos by Predicting Motion and Appearance
+          Statistics.<br>
+          Jiangliu Wang, Jianbo Jiao, <b>Linchao Bao*</b>, Shengfeng He, Yunhui Liu, Wei Liu*. (*corresponding
+          author)<br>
+          <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2019.</i><br>
+          [<a
+            href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Self-Supervised_Spatio-Temporal_Representation_Learning_for_Videos_by_Predicting_Motion_and_CVPR_2019_paper.pdf">PDF</a>
+          | <a href="https://github.com/laura-wang/video_repres_mas">code</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/cvpr19_spoof.jpg"></center>
+        </td>
+        <td>
+          Face Anti-Spoofing: Model Matters, So Does Data.<br>
+          Xiao Yang, Wenhan Luo, <b>Linchao Bao</b>, Yuan Gao, Dihong Gong, Shibao Zheng, Zhifeng Li, Wei Liu.<br>
+          <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2019.</i><br>
+          [<a
+            href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Yang_Face_Anti-Spoofing_Model_Matters_so_Does_Data_CVPR_2019_paper.pdf">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/ijcv18_face.jpg"></center>
+        </td>
+        <td>
+          Joint Face Hallucination and Deblurring via Structure Generation and Detail Enhancement.<br>
+          Yibing Song, Jiawei Zhang, Lijun Gong, Shengfeng He, <b>Linchao Bao</b>, Jinshan Pan, Qingxiong Yang,
+          Ming-Hsuan Yang.<br>
+          <i>International Journal of Computer Vision (<b>IJCV</b>), 2018.</i><br>
+          [<a href="https://arxiv.org/abs/1811.09019">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/eccv18_vio.jpg"></center>
+        </td>
+        <td>
+          Modeling Varying Camera-IMU Time Offset in Optimization-Based Visual-Inertial Odometry.<br>
+          Yonggen Ling, <b>Linchao Bao</b>, Zequn Jie, Fengming Zhu, Ziyang Li, Shanmin Tang, Yongsheng Liu, Wei
+          Liu, Tong Zhang.<br>
+          <i>European Conference on Computer Vision (<b>ECCV</b>), 2018.</i><br>
+          [<a
+            href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Yonggen_Ling_Modeling_Varying_Camera-IMU_ECCV_2018_paper.pdf">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/cvpr18_cnnmrf.jpg"></center>
+        </td>
+        <td>
+          CNN in MRF: Video Object Segmentation via Inference in A CNN-Based Higher-Order Spatio-Temporal MRF.<br>
+          <b>Linchao Bao</b>, Baoyuan Wu, Wei Liu.<br>
+          <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2018. (<b>spotlight
+              oral</b>)</i><br>
+          [<a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Bao_CNN_in_MRF_CVPR_2018_paper.pdf">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/cvpr18_vital.jpg"></center>
+        </td>
+        <td>
+          VITAL: VIsual Tracking via Adversarial Learning.<br>
+          Yibing Song, Chao Ma, Xiaohe Wu, Lijun Gong, <b>Linchao Bao</b>, Wangmeng Zuo, Chunhua Shen, Rynson Lau,
+          Ming-Hsuan Yang.<br>
+          <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2018. (<b>spotlight
+              oral</b>)</i><br>
+          [<a
+            href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Song_VITAL_VIsual_Tracking_CVPR_2018_paper.pdf">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/cvpr18_deblur.jpg"></center>
+        </td>
+        <td>
+          Dynamic Scene Deblurring Using Spatially Variant Recurrent Neural Networks.<br>
+          Jiawei Zhang, Jinshan Pan, Jimmy Ren, Yibing Song, <b>Linchao Bao</b>, Rynson Lau, Ming-Hsuan Yang.<br>
+          <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2018. (<b>spotlight
+              oral</b>)</i><br>
+          [<a
+            href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhang_Dynamic_Scene_Deblurring_CVPR_2018_paper.pdf">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/cvprw18_vos.jpg"></center>
+        </td>
+        <td>
+          Class-Agnostic Video Object Segmentation without Semantic Re-Identification.<br>
+          Shuangjie Xu, <b>Linchao Bao</b>, Pan Zhou.<br>
+          <i>The 2018 DAVIS Challenge on Video Object Segmentation - CVPR Workshops (<b>CVPRW</b>), 2018.</i><br>
+          <i>(We achieved the <b>3rd</b> place out of 18 teams in the challenge!)</i><br>
+          [<a
+            href="https://davischallenge.org/challenge2018/papers/DAVIS-Semisupervised-Challenge-3rd-Team.pdf">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/cviu17_stylize.jpg"></center>
+        </td>
+        <td>
+          Stylizing Face Images via Multiple Exemplars.<br>
+          Yibing Song, <b>Linchao Bao</b>, Shengfeng He, Qingxiong Yang, Ming-Hsuan Yang.<br>
+          <i>Computer Vision and Image Understanding (<b>CVIU</b>), 2017.</i><br>
+          [<a href="https://arxiv.org/abs/1708.08288">PDF</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/ijcai17_facehallucinate.jpg"></center>
+        </td>
+        <td>
+          Learning to Hallucinate Face Images via Component Generation and Enhancement.<br>
+          Yibing Song, Jiawei Zhang, Shengfeng He, <b>Linchao Bao</b>, Qingxiong Yang.<br>
+          <i>International Joint Conference on Artificial Intelligence (<b>IJCAI</b>), 2017.</i><br>
+          [<a href="https://arxiv.org/abs/1708.00223">PDF</a> | <a
+            href="https://ybsong00.github.io/ijcai17_sr/index.html">project page</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/ijcai17_sketch.jpg"></center>
+        </td>
+        <td>
+          Fast Preprocessing for Robust Face Sketch Synthesis.<br>
+          Yibing Song, Jiawei Zhang, <b>Linchao Bao</b>, Qingxiong Yang.<br>
+          <i>International Joint Conference on Artificial Intelligence (<b>IJCAI</b>), 2017.</i><br>
+          [<a href="https://arxiv.org/abs/1708.00224">PDF</a> | <a
+            href="https://ybsong00.github.io/ijcai17_sketch/index.html">project page</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/arxiv14_msmoother.jpg"></center>
+        </td>
+        <td>
+          Robust Piecewise-Constant Smoothing: M-Smoother Revisited.<br>
+          <b>Linchao Bao</b> and Qingxiong Yang.<br>
+          <i>arXiv:1410.7580 [cs.CV], 2014.</i><br>
+          [<a href="univfilter/arXiv14_MSmoother.pdf">PDF (7.5MB)</a> | <a
+            href="univfilter/arXiv14_MSmoother_lowres.pdf">low-res. PDF (1.3MB)</a> | <a
+            href="msmoother/index.html">project
+            page</a> | <a href="univfilter/msmoother_matlabcode.zip">Matlab
+            code</a> | <a href="univfilter/msmoother14bao.bib">BibTex</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/tip14_eppm.jpg"></center>
+        </td>
+        <td>
+          Fast Edge-Preserving PatchMatch for Large Displacement Optical Flow.<br>
+          <b>Linchao Bao</b>, Qingxiong Yang, Hailin Jin.<br>
+          <i>IEEE Transactions on Image Processing (<b>TIP</b>), 2014.</i><br>
+          [<a href="cvpr2014eppm/tip2014-eppm.pdf">PDF (24MB)</a> | <a
+            href="cvpr2014eppm/tip2014-eppm-lowres.pdf">low-res.
+            PDF (740KB)</a> | <a href="cvpr2014eppm/index.html">project page</a> | <a
+            href="cvpr2014eppm/EPPM_Matlab_mexw64.zip">Matlab
+            mexw64 code (2.5MB)</a> | <a href="https://github.com/linchaobao/EPPM">github code</a> | <a
+            href="cvpr2014eppm/tip2014eppmflow.bib">BibTex</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/eccv14_sketch.jpg"></center>
+        </td>
+        <td>
+          Real-Time Exemplar-Based Face Sketch Synthesis.<br>
+          Yibing Song, <b>Linchao Bao</b>, Qingxiong Yang, Ming-Hsuan Yang.<br>
+          <i>European Conference on Computer Vision (<b>ECCV</b>), 2014.</i><br>
+          [<a href="https://ybsong00.github.io/eccv14/song_eccv14_sketch.pdf">PDF (2.7MB)</a> | <a
+            href="https://ybsong00.github.io/eccv14/index.html">project page</a> | <a
+            href="eccv2014sketch/eccv2014song.bib">BibTeX</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/cvpr14_eppm.jpg"></center>
+        </td>
+        <td>
+          Fast Edge-Preserving PatchMatch for Large Displacement Optical Flow.<br>
+          <b>Linchao Bao</b>, Qingxiong Yang, Hailin Jin.<br>
+          <i>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2014.</i><br>
+          [<a href="cvpr2014eppm/cvpr2014_eppm_flow.pdf">PDF (5.4MB)</a> | <a href="cvpr2014eppm/index.html">project
+            page</a> | <a href="cvpr2014eppm/EPPM_Matlab_mexw64.zip">Matlab mexw64 code (2.5MB)</a> | <a
+            href="https://github.com/linchaobao/EPPM">github code</a> | <a
+            href="cvpr2014eppm/cvpr2014eppmflow.bib">BibTeX</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/gtc14_flow.jpg"></center>
+        </td>
+        <td>
+          A Comparison of TV-L1 Optical Flow Solvers on GPU.<br>
+          <b>Linchao Bao</b>, Hailin Jin, Byungmoon Kim, Qingxiong Yang.<br>
+          <i>GPU Technology Conference (<b>GTC</b>), 2014. (poster)</i><br>
+          [<a href="gtc2014/TVL1flow_GTC2014_poster.pdf">PDF poster (200KB)</a> | <a
+            href="gtc2014/TVL1flow_GTC2014_notes.pdf">PDF implementation notes (350KB)</a> | Matlab mex code (<a
+            href="gtc2014/TVL1Flow_mexw64.zip">win64</a> | <a href="gtc2014/tvl1flow_bao_mex.zip">linux</a>) | <a
+            href="gtc2014/gtc2014tvl1flow.bib">BibTeX</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/wacv14_decolor.jpg"></center>
+        </td>
+        <td>
+          Real-Time Video Decolorization Using Bilateral Filtering.<br>
+          Yibing Song, <b>Linchao Bao</b>, Qingxiong Yang.<br>
+          <i>IEEE Winter Conference on Applications of Computer Vision (<b>WACV</b>), 2014.</i><br>
+          [<a href="wacv2014/decolor_wacv2014.pdf">PDF (9.7MB)</a> | <a
+            href="wacv2014/decolor_wacv2014_compressed.pdf">low-res. PDF (1.2MB)</a> | <a
+            href="wacv2014/WACV2014decolor_slides.pptx">pptx slides (10.5MB)</a> | <a
+            href="wacv2014/wacv2014decolor.bib">BibTeX</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/tip14_treefilter.jpg"></center>
+        </td>
+        <td>
+          Tree Filtering: Efficient Structure-Preserving Smoothing With a Minimum Spanning Tree.<br>
+          <b>Linchao Bao</b>, Yibing Song, Qingxiong Yang, Hao Yuan, Gang Wang.<br>
+          <i>IEEE Transactions on Image Processing (<b>TIP</b>), 2014.</i><br>
+          [<a href="treefilter/tip13treefilter.pdf">PDF (3.5MB)</a> | <a
+            href="treefilter/tip13treefilter_lowres.pdf">low-res. PDF (950KB)</a> | <a
+            href="treefilter/tip13treefilter-demo-mex64.zip">Matlab demo (mexw64/mexa64) (3MB)</a> | <a
+            href="treefilter/tip13treefilter.bib">BibTeX</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/sigtb13_decolor.jpg"></center>
+        </td>
+        <td>
+          Decolorization: Is <font face="Courier New">rgb2gray()</font> Out?<br>
+          Yibing Song, <b>Linchao Bao</b>, Xiaobin Xu, Qingxiong Yang.<br>
+          <i>ACM SIGGRAPH Asia Technical Briefs, 2013.</i><br>
+          [<a href="decolor/siga13tb.pdf">PDF (6.8MB)</a> | <a href="decolor/siga13tb_lowres.pdf">low-res. PDF
+            (610KB)</a> | <a href="https://ybsong00.github.io/siga13tb/index.html">project page</a> | <a
+            href="decolor/siga13tb.bib">BibTex</a>]
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <center><img width="200" src="teaser_figs/icpr12_filter.jpg"></center>
+        </td>
+        <td>
+          An Edge-Preserving Filtering Framework for Visibility Restoration.<br>
+          <b>Linchao Bao</b>, Yibing Song, Qingxiong Yang, Narendra Ahuja.<br>
+          <i>International Conference on Pattern Recognition (<b>ICPR</b>), 2012. (<b>oral</b>)</i><br>
+          [<a href="univfilter/icpr12bao.pdf">PDF (1.7MB)</a> | <a href="univfilter/icpr12bao.pptx">pptx slides
+            (5MB)</a> | <a href="univfilter/icpr12bao_cppcode.zip">C++ code (haze removal) (2.3MB)</a> | <a
+            href="univfilter/icpr12bao.bib">BibTeX</a>]
+        </td>
+      </tr>
 
     </tbody>
   </table>
+
+  <hr align="left" size="4">
+
+  <!-- products -->
+  <h4>Shipped Products</h4>
+  <ul>
+    <li>
+      <a href="https://www.dji.com/spark">DJI Spark Drone</a>: IMU-based Electronic Image Stabilization
+      (EIS).<br>
+      <i>I led a team that developed the IMU-based EIS system for DJI Spark drone during 2015~2016.</i><br>
+    </li>
+    <li>
+      <a href="https://www.dji.com/osmo">DJI OSMO</a>: Panorama Stitching on Mobile Phones.<br>
+      <i>I led a team that developed the panorama photography mode for DJI OSMO in 2015.</i><br>
+    </li>
+    <li>
+      <a href="https://www.dji.com/phantom">DJI Phantom 3</a> & <a href="https://www.dji.com/inspire-1">Inspire
+        1</a>: HDR Photography.<br>
+      <i>I developed the HDR mode for the cameras on DJI Phantom 3 and Inspire 1 drones in 2015.</i><br>
+    </li>
+    <li>
+      <a href="http://blogs.adobe.com/lightroomjournal/2015/04/spring-updates-to-cc-photography.html">Adobe
+        Lightroom 6.0</a> & <a
+        href="http://blogs.adobe.com/lightroomjournal/2015/04/camera-raw-9-now-available.html">Photoshop Camera
+        Raw 9.0</a>: HDR & Panorama Merge.<br>
+      <i>Together with Joshua Bury, we developed the algorithms for HDR & Panorama Merge in Adobe Lightroom 6.0
+        and Photoshop Camera Raw 9.0 in 2014.</i><br>
+    </li>
+    <li>
+      <a href="https://blogs.adobe.com/creativecloud/premiere-pro-cc-ibc/?segment=dva">Adobe Premiere Pro
+        CC</a>: <a href="https://www.youtube.com/watch?v=3YE5tff8pqg">GPU optimized Optical Flow Time
+        Remapping</a>.<br>
+      <i>I developed the algorithm for GPU optimized Optical Flow Time Remapping in Adobe Premiere Pro CC in
+        2014.</i><br>
+    </li>
+  </ul>
 
 </body>
 
