@@ -161,7 +161,7 @@
                         </li>
 
                         <li>
-                            <a class="btn btn-success" target="_blank" href="">
+                            <a class="btn btn-success" target="_blank" href="https://youtu.be/4zJiVeLXW2o">
                                 <span class="glyphicon glyphicon-film"></span>
                                 <span>Supplementary Video</span>
                             </a>
@@ -182,23 +182,15 @@
         <div class="col-md-6">
             <h2 style="margin-top:50px;">Abstract</h2>
             <p class="abstract">
-We present a novel audio-driven facial animation approach that can generate
-realistic lip-synchronized 3D facial animations from the input audio. Our
-approach employs viseme curves to yield the animations, which are learned
-from speech videos via a novel parametric viseme fitting algorithm. The
-fitting algorithm utilizes phoneme labels as guidance to extract viseme
-parameters from videos using a differentiable renderer based optimization
-framework. With the guidance of phonemes, the extraced viseme curves
-can better correlate with phonemes, thus more controllable and friendly to
-animators. To support multilingual speech inputs and generalizability to
-unseen voices, we take advantage of deep audio feature models pretrained
-on multiple languages to learn the mapping from audio to viseme curves. A
-viseme scanning approach for acquiring high-fidelity viseme assets is further
-presented for efficient speech animation production. We show that the
-predicted viseme curves can be applied to different viseme-rigged characters
-to yield various personalized animations with realistic and natural facial
-motions. Our approach is artist-friendly and can be easily integrated into
-typical animation production workflows. 
+We present a novel audio-driven facial animation approach that can generate realistic lip-synchronized 3D facial animations from the input audio. 
+Our approach learns viseme dynamics from speech videos, produces animator-friendly viseme curves, and supports multilingual speech inputs. 
+The core of our approach is a novel parametric viseme fitting algorithm that utilizes phoneme priors to extract viseme parameters from speech videos. 
+With the guidance of phonemes, the extracted viseme curves can better correlate with phonemes, thus more controllable and friendly to animators. 
+To support multilingual speech inputs and generalizability to unseen voices, we take advantage of deep audio feature models pretrained on multiple languages to learn the mapping from audio to viseme curves. 
+Our audio-to-curves mapping achieves state-of-the-art performance even when the input audio suffers from distortions of volume, pitch, speed, or noise. 
+Lastly, a viseme scanning approach for acquiring high-fidelity viseme assets is presented for efficient speech animation production. 
+We show that the predicted viseme curves can be applied to different viseme-rigged characters to yield various personalized animations with realistic and natural facial motions. 
+Our approach is artist-friendly and can be easily integrated into typical animation production workflows including blendshape or bone based animation. 
             </p>
         </div>
     </div>
@@ -208,7 +200,7 @@ typical animation production workflows.
         <div class="col-md-6">
             <div class="video">
                 <h2>Video (containing audio)</h2>
-<iframe id="player1" width="800" height="450" src="https://www.youtube.com/embed/e9ti6mCnxLU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe id="player1" width="800" height="450" src="https://www.youtube.com/embed/4zJiVeLXW2o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             
             <div class="video-controller">
@@ -268,12 +260,12 @@ $( document ).ready(function() {
         // change source of videos
         $('#btn-youtube-1').click(function() {
             console.log('change to youtube src');
-            $('#player1').attr("src", "https://www.youtube.com/embed/e9ti6mCnxLU");
+            $('#player1').attr("src", "https://www.youtube.com/embed/4zJiVeLXW2o");
         });
 
         $('#btn-bilibili-1').click(function() {
             console.log('change to bilibili src');
-            $('#player1').attr("src", "https://player.bilibili.com/player.html?aid=797496848&bvid=BV1gy4y1r7R7&cid=245171969&page=1");
+            $('#player1').attr("src", "https://player.bilibili.com/player.html?aid=480270808&bvid=BV11T41127WB&cid=967025868&page=1");
         });
     });
 
