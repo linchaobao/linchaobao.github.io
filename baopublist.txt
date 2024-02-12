@@ -1,0 +1,155 @@
+\begin{itemize}
+    \item Neural Point-based Volumetric Avatar: Surface-guided Neural Points for Efficient and Photorealistic Volumetric Head Avatar.\\
+        Cong Wang, Di Kang, Yanpei Cao, \textbf{Linchao Bao}, Ying Shan, Song-Hai Zhang.\\
+        \emph{\textbf{ACM SIGGRAPH Asia}, 2023.}
+    \item Learning Audio-Driven Viseme Dynamics for 3D Face Animation.\\
+        \textbf{Linchao Bao}, Haoxian Zhang, Yue Qian, Tangli Xue, Changhai Chen, Xuefei Zhe, Di Kang.\\
+        \emph{arXiv:2301.06059 [cs.GR], 2023.}
+    \item Get3DHuman: Lifting StyleGAN-Human into a 3D Generative Model using Pixel-aligned Reconstruction Priors.\\
+        Zhangyang Xiong, Di Kang, Derong Jin, Weikai Chen, \textbf{Linchao Bao}, Shuguang Cui, Xiaoguang Han.\\
+        \emph{IEEE International Conference on Computer Vision (\textbf{ICCV}), 2023.}
+    \item FFHQ-UV: Normalized Facial UV-Texture Dataset for 3D Face Reconstruction.\\
+        Haoran Bai, Di Kang, Haoxian Zhang, Jinshan Pan, \textbf{Linchao Bao}.\\
+        \emph{IEEE Conference on Computer Vision and Pattern Recognition (\textbf{CVPR}), 2023.}
+    \item Skinned Motion Retargeting with Residual Perception of Motion Semantics \&amp; Geometry.\\
+        Jiaxu Zhang, Junwu Weng, Di Kang, Fang Zhao, Shaoli Huang, Xuefei Zhe, \textbf{Linchao Bao}, Ying Shan, Jue Wang, Zhigang Tu.\\
+        \emph{IEEE Conference on Computer Vision and Pattern Recognition (\textbf{CVPR}), 2023.}
+    \item Audio2Gestures: Generating Diverse Gestures From Audio.\\
+        Jing Li, Di Kang, Wenjie Pei, Xuefei Zhe, Ying Zhang, \textbf{Linchao Bao*}, Zhenyu He*. (*corresponding author)\\
+        \emph{IEEE Transactions on Visualization and Computer Graphics (\textbf{TVCG}), 2023.}
+    \item Consistent 3D Hand Reconstruction in Video via Self-Supervised Learning.\\
+        Zhigang Tu, Zhisheng Huang, Yujin Chen, Di Kang, \textbf{Linchao Bao}, Bisheng Yang, Junsong Yuan.\\
+        \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence (\textbf{TPAMI}), 2023.}
+    \item CARD: Semantic Segmentation with Efficient Class-Aware Regularized Decoder.\\
+        Ye Huang, Di Kang, Liang Chen, Wenjing Jia, Xiangjian He, Lixin Duan, Xuefei Zhe, \textbf{Linchao Bao}.\\
+        \emph{arXiv:2301.04258 [cs.CV], 2023.}
+    \item REALY: Rethinking the Evaluation of 3D Face Reconstruction.\\
+        Zenghao Chai, Haoxian Zhang, Jing Ren, Di Kang, Zhengzhuo Xu, Xuefei Zhe, Chun Yuan*, \textbf{Linchao Bao*}. (*corresponding author)\\
+        \emph{European Conference on Computer Vision (\textbf{ECCV}), 2022.}
+    \item CAR: Class-aware Regularizations for Semantic Segmentation.\\
+        Ye Huang, Di Kang, Liang Chen, Xuefei Zhe, Wenjing Jia, \textbf{Linchao Bao}, Xiangjian He.\\
+        \emph{European Conference on Computer Vision (\textbf{ECCV}), 2022.}
+    \item NeRFReN: Neural Radiance Fields With Reflections.\\
+        Yuan-Chen Guo, Di Kang, \textbf{Linchao Bao}, Yu He, Song-Hai Zhang.\\
+        \emph{IEEE Conference on Computer Vision and Pattern Recognition (\textbf{CVPR}), 2022.}
+    \item Learning to Construct 3D Building Wireframes from 3D Line Clouds.\\
+        Yicheng Luo, Jing Ren, Xuefei Zhe, Di Kang, Yajing Xu, Peter Wonka, \textbf{Linchao Bao}.\\
+        \emph{British Machine Vision Conference (\textbf{BMVC}), 2022.}
+    \item PVSeRF: Joint Pixel-, Voxel- and Surface-Aligned Radiance Field for Single-Image Novel View Synthesis.\\
+        Xianggang Yu, Jiapeng Tang, Yipeng Qin, Chenghong Li, \textbf{Linchao Bao}, Xiaoguang Han, Shuguang Cui.\\
+        \emph{ACM International Conference on Multimedia (\textbf{MM}), 2022.}
+    \item Self-Supervised Video Representation Learning by Uncovering Spatio-temporal Statistics.\\
+        Jiangliu Wang, Jianbo Jiao, \textbf{Linchao Bao*}, Shengfeng He, Wei Liu, Yunhui Liu*. (*corresponding author)\\
+        \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence (\textbf{TPAMI}), 2022.}
+    \item ISF-GAN: An Implicit Style Function for High-Resolution Image-to-Image Translation.\\
+        Yahui Liu, Yajing Chen, \textbf{Linchao Bao}, Nicu Sebe, Bruno Lepri, Marco De Nadai.\\
+        \emph{IEEE Transactions on Multimedia (\textbf{TMM}), 2022.}
+    \item NEURAL MARIONETTE: A Transformer-based Multi-action Human Motion Synthesis System.\\
+        Weiqiang Wang, Xuefei Zhe, Huan Chen, Di Kang, Tingguang Li, Ruizhi Chen, \textbf{Linchao Bao*}. (*corresponding author)\\
+        \emph{arXiv:2209.13204 [cs.CV], 2022.}
+    \item PIFu for the Real World: A Self-supervised Framework to Reconstruct Dressed Human from Single-view Images.\\
+        Zhangyang Xiong, Dong Du, Yushuang Wu, Jingqi Dong, Di Kang, \textbf{Linchao Bao}, Xiaoguang Han.\\
+        \emph{arXiv:2208.10769 [cs.CV], 2022.}
+    \item Semi-signed Neural Fitting for Surface Reconstruction from Unoriented Point Clouds.\\
+        Runsong Zhu, Di Kang, Ka-Hei Hui, Yue Qian, Xuefei Zhe, Zhen Dong, \textbf{Linchao Bao}, Chi-Wing Fu.\\
+        \emph{arXiv:2206.06715 [cs.CV], 2022.}
+    \item Smooth image-to-image translations with latent space interpolations.\\
+        Yahui Liu, Enver Sangineto, Yajing Chen, \textbf{Linchao Bao}, Haoxian Zhang, Nicu Sebe, Bruno Lepri, Marco De Nadai.\\
+        \emph{arXiv:2210.00841 [cs.CV], 2022.}
+    \item High-Fidelity 3D Digital Human Head Creation from RGB-D Selfies.\\
+        \textbf{Linchao Bao*}, Xiangkai Lin*, Yajing Chen*, Haoxian Zhang*, Sheng Wang, Xuefei Zhe, Di Kang, Haozhi Huang, Xinwei Jiang, Jue Wang, Dong Yu, Zhengyou Zhang. (*equal contribution)\\
+        \emph{ACM Transactions on Graphics (\textbf{TOG}), 2021.}
+    \item Audio2Gestures: Generating Diverse Gestures from Speech Audio with Conditional Variational Autoencoders.\\
+        Jing Li, Di Kang, Wenjie Pei, Xuefei Zhe, Ying Zhang, Zhenyu He, \textbf{Linchao Bao}.\\
+        \emph{IEEE International Conference on Computer Vision (\textbf{ICCV}), 2021.}
+    \item Model-based 3D Hand Reconstruction via Self-Supervised Learning.\\
+        Yujin Chen, Zhigang Tu, Di Kang, \textbf{Linchao Bao}, Ying Zhang, Xuefei Zhe, Ruizhi Chen, Junsong          Yuan.\\
+        \emph{IEEE Conference on Computer Vision and Pattern Recognition (\textbf{CVPR}), 2021.}
+    \item Smoothing the Disentangled Latent Style Space for Unsupervised Image-to-Image Translation.\\
+        Yahui Liu, Enver Sangineto, Yajing Chen, \textbf{Linchao Bao}, Haoxian Zhang, Nicu Sebe, Bruno Lepri, Wei          Wang, Marco De Nadai.\\
+        \emph{IEEE Conference on Computer Vision and Pattern Recognition (\textbf{CVPR}), 2021.}
+    \item UniFaceGAN: A Unified Framework for Temporally Consistent Facial Video Editing.\\
+        Meng Cao, Haozhi Huang, Hao Wang, Xuan Wang, Li Shen, Sheng Wang, \textbf{Linchao Bao*}, Zhifeng Li, Jiebo          Luo. (*corresponding author)\\
+        \emph{IEEE Transactions on Image Processing (\textbf{TIP}), 2021.}
+    \item Multi-Stage Degradation Homogenization for Super-Resolution of Face Images With Extreme Degradations.\\
+        Liang Chen, Jinshan Pan, Junjun Jiang, Jiawei Zhang, Zhen Han, \textbf{Linchao Bao*}. (*corresponding          author)\\
+        \emph{IEEE Transactions on Image Processing (\textbf{TIP}), 2021.}
+    \item Joint Hand-object 3D Reconstruction from a Single Image with Cross-branch Feature Fusion.\\
+        Yujin Chen, Zhigang Tu, Di Kang, Ruizhi Chen, \textbf{Linchao Bao*}, Zhengyou Zhang, Junsong Yuan.          (*corresponding author)\\
+        \emph{IEEE Transactions on Image Processing (\textbf{TIP}), 2021.}
+    \item Animatable Neural Radiance Fields from Monocular RGB Video.\\
+        Jianchuan Chen, Ying Zhang, Di Kang, Xuefei Zhe, \textbf{Linchao Bao}, Xu Jia, Huchuan Lu.\\
+        \emph{arXiv:2106.13629 [cs.CV], 2021.}
+    \item Self-supervised Learning of Detailed 3D Face Reconstruction.\\
+        Yajing Chen, Fanzi Wu, Zeyu Wang, Yibing Song, Yonggen Ling, \textbf{Linchao Bao*}. (*corresponding          author)\\
+        \emph{IEEE Transactions on Image Processing (\textbf{TIP}), 2020.}
+    \item Laplacian Denoising Autoencoder.\\
+        Jianbo Jiao, \textbf{Linchao Bao}, Yunchao Wei, Shengfeng He, Honghui Shi, Rynson W. H. Lau, Thomas S.          Huang.\\
+        \emph{arXiv:2003.13623 [cs.CV], 2020.}
+    \item MVF-Net: Multi-View 3D Face Morphable Model Regression.\\
+        Fanzi Wu*, \textbf{Linchao Bao*}, Yajing Chen, Yonggen Ling, Yibing Song, Songnan Li, King N. Ngan, Wei Liu.          (*equal contribution)\\
+        \emph{IEEE Conference on Computer Vision and Pattern Recognition (\textbf{CVPR}), 2019.}
+    \item MHP-VOS: Multiple Hypotheses Propagation for Video Object Segmentation.\\
+        Shuangjie Xu, Daizong Liu, \textbf{Linchao Bao*}, Wei Liu, Pan Zhou*. (*corresponding author)\\
+        \emph{IEEE Conference on Computer Vision and Pattern Recognition (\textbf{CVPR}), 2019.}
+    \item Self-supervised Spatio-temporal Representation Learning for Videos by Predicting Motion and Appearance          Statistics.\\
+        Jiangliu Wang, Jianbo Jiao, \textbf{Linchao Bao*}, Shengfeng He, Yunhui Liu, Wei Liu*. (*corresponding          author)\\
+        \emph{IEEE Conference on Computer Vision and Pattern Recognition (\textbf{CVPR}), 2019.}
+    \item Face Anti-Spoofing: Model Matters, So Does Data.\\
+        Xiao Yang, Wenhan Luo, \textbf{Linchao Bao}, Yuan Gao, Dihong Gong, Shibao Zheng, Zhifeng Li, Wei Liu.\\
+        \emph{IEEE Conference on Computer Vision and Pattern Recognition (\textbf{CVPR}), 2019.}
+    \item Joint Face Hallucination and Deblurring via Structure Generation and Detail Enhancement.\\
+        Yibing Song, Jiawei Zhang, Lijun Gong, Shengfeng He, \textbf{Linchao Bao}, Jinshan Pan, Qingxiong Yang,          Ming-Hsuan Yang.\\
+        \emph{International Journal of Computer Vision (\textbf{IJCV}), 2018.}
+    \item Modeling Varying Camera-IMU Time Offset in Optimization-Based Visual-Inertial Odometry.\\
+        Yonggen Ling, \textbf{Linchao Bao}, Zequn Jie, Fengming Zhu, Ziyang Li, Shanmin Tang, Yongsheng Liu, Wei          Liu, Tong Zhang.\\
+        \emph{European Conference on Computer Vision (\textbf{ECCV}), 2018.}
+    \item CNN in MRF: Video Object Segmentation via Inference in A CNN-Based Higher-Order Spatio-Temporal MRF.\\
+        \textbf{Linchao Bao}, Baoyuan Wu, Wei Liu.\\
+        \emph{IEEE Conference on Computer Vision and Pattern Recognition (\textbf{CVPR}), 2018.}
+    \item VITAL: VIsual Tracking via Adversarial Learning.\\
+        Yibing Song, Chao Ma, Xiaohe Wu, Lijun Gong, \textbf{Linchao Bao}, Wangmeng Zuo, Chunhua Shen, Rynson Lau,          Ming-Hsuan Yang.\\
+        \emph{IEEE Conference on Computer Vision and Pattern Recognition (\textbf{CVPR}), 2018.}
+    \item Dynamic Scene Deblurring Using Spatially Variant Recurrent Neural Networks.\\
+        Jiawei Zhang, Jinshan Pan, Jimmy Ren, Yibing Song, \textbf{Linchao Bao}, Rynson Lau, Ming-Hsuan Yang.\\
+        \emph{IEEE Conference on Computer Vision and Pattern Recognition (\textbf{CVPR}), 2018.}
+    \item Class-Agnostic Video Object Segmentation without Semantic Re-Identification.\\
+        Shuangjie Xu, \textbf{Linchao Bao}, Pan Zhou.\\
+        \emph{The 2018 DAVIS Challenge on Video Object Segmentation - CVPR Workshops (\textbf{CVPRW}), 2018.}
+    \item Stylizing Face Images via Multiple Exemplars.\\
+        Yibing Song, \textbf{Linchao Bao}, Shengfeng He, Qingxiong Yang, Ming-Hsuan Yang.\\
+        \emph{Computer Vision and Image Understanding (\textbf{CVIU}), 2017.}
+    \item Learning to Hallucinate Face Images via Component Generation and Enhancement.\\
+        Yibing Song, Jiawei Zhang, Shengfeng He, \textbf{Linchao Bao}, Qingxiong Yang.\\
+        \emph{International Joint Conference on Artificial Intelligence (\textbf{IJCAI}), 2017.}
+    \item Fast Preprocessing for Robust Face Sketch Synthesis.\\
+        Yibing Song, Jiawei Zhang, \textbf{Linchao Bao}, Qingxiong Yang.\\
+        \emph{International Joint Conference on Artificial Intelligence (\textbf{IJCAI}), 2017.}
+    \item Robust Piecewise-Constant Smoothing: M-Smoother Revisited.\\
+        \textbf{Linchao Bao} and Qingxiong Yang.\\
+        \emph{arXiv:1410.7580 [cs.CV], 2014.}
+    \item Fast Edge-Preserving PatchMatch for Large Displacement Optical Flow.\\
+        \textbf{Linchao Bao}, Qingxiong Yang, Hailin Jin.\\
+        \emph{IEEE Transactions on Image Processing (\textbf{TIP}), 2014.}
+    \item Real-Time Exemplar-Based Face Sketch Synthesis.\\
+        Yibing Song, \textbf{Linchao Bao}, Qingxiong Yang, Ming-Hsuan Yang.\\
+        \emph{European Conference on Computer Vision (\textbf{ECCV}), 2014.}
+    \item Fast Edge-Preserving PatchMatch for Large Displacement Optical Flow.\\
+        \textbf{Linchao Bao}, Qingxiong Yang, Hailin Jin.\\
+        \emph{IEEE Conference on Computer Vision and Pattern Recognition (\textbf{CVPR}), 2014.}
+    \item A Comparison of TV-L1 Optical Flow Solvers on GPU.\\
+        \textbf{Linchao Bao}, Hailin Jin, Byungmoon Kim, Qingxiong Yang.\\
+        \emph{GPU Technology Conference (\textbf{GTC}), 2014. (poster)}
+    \item Real-Time Video Decolorization Using Bilateral Filtering.\\
+        Yibing Song, \textbf{Linchao Bao}, Qingxiong Yang.\\
+        \emph{IEEE Winter Conference on Applications of Computer Vision (\textbf{WACV}), 2014.}
+    \item Tree Filtering: Efficient Structure-Preserving Smoothing With a Minimum Spanning Tree.\\
+        \textbf{Linchao Bao}, Yibing Song, Qingxiong Yang, Hao Yuan, Gang Wang.\\
+        \emph{IEEE Transactions on Image Processing (\textbf{TIP}), 2014.}
+    \item Decolorization: Is <font face="Courier New">rgb2gray()</font> Out?\\
+        Yibing Song, \textbf{Linchao Bao}, Xiaobin Xu, Qingxiong Yang.\\
+        \emph{ACM SIGGRAPH Asia Technical Briefs, 2013.}
+    \item An Edge-Preserving Filtering Framework for Visibility Restoration.\\
+        \textbf{Linchao Bao}, Yibing Song, Qingxiong Yang, Narendra Ahuja.\\
+        \emph{International Conference on Pattern Recognition (\textbf{ICPR}), 2012.}
+\end{itemize}
