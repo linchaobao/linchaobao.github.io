@@ -1,13 +1,47 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-
 <head>
   <title>Linchao Bao's Homepage</title>
   <link rel="stylesheet" type="text/css" href="baostyle.css">
   <base target="_blank">
   <style type="text/css">
+    h2,
+    h3 {
+      color: #527bbd;
+      margin-top: 0.7em;
+      margin-bottom: 0.3em;
+      padding-bottom: 0.2em;
+      line-height: 1.0;
+      padding-top: 0.5em;
+      border-bottom: 1px solid #aaaaaa;
+    }
+
+    h1 {
+      font-size: 125%;
+    }
+
+    h2 {
+      padding-top: 0.8em;
+      font-size: 115%;
+    }
+
+    h2+h3 {
+      padding-top: 0.2em;
+    }
+
+    h3 {
+      font-size: 110%;
+      border-bottom: none;
+    }
+
+    p {
+      margin-top: 0.0em;
+      margin-bottom: 0.8em;
+      padding: 0;
+      line-height: 1.3;
+    }
+
     table {
       counter-reset: rowNumber;
     }
@@ -19,7 +53,52 @@
       content: counter(rowNumber) ".";
       padding-right: 0.3em;
       text-align: right;
-    } 
+    }
+
+    div.codeblock,
+    div.infoblock {
+      margin-right: 0%;
+      margin-top: 1.2em;
+      margin-bottom: 1.3em;
+    }
+
+    div.blocktitle {
+      font-weight: bold;
+      color: #cd7b62;
+      margin-top: 1.2em;
+      margin-bottom: 0.1em;
+    }
+
+    div.blockcontent {
+      border: 1px solid silver;
+      padding: 0.3em 0.5em;
+    }
+
+    div.infoblock>div.blockcontent {
+      background: #ffffee;
+    }
+
+    div.blockcontent p+ul,
+    div.blockcontent p+ol {
+      margin-top: 0.4em;
+    }
+
+    div.infoblock p {
+      margin-bottom: 0em;
+    }
+
+    div.infoblock li p,
+    div.infoblock dd p {
+      margin-bottom: 0.5em;
+    }
+
+    div.infoblock p+p {
+      margin-top: 0.8em;
+    }
+
+    div.codeblock>div.blockcontent {
+      background: #f6f6f6;
+    }
   </style>
 </head>
 
@@ -30,16 +109,17 @@
       <tr>
         <td><img src="bao.jpg" border="0" width="250"></td>
         <td>
-          <h2 align="center">
+          <h1 align="center">
             Linchao Bao
-            <br>
+            <br />
             暴林超
-          </h2>
+          </h1>
           <p align="center">
-            Ph.D.
-            <br>
-            <br>
-            Head of AI, <a href="https://unity.cn/">Unity China</a>
+            Incoming Associate Professor
+            <br />
+            <a href="https://www.birmingham.ac.uk/schools/computer-science/index.aspx">School of Computer Science</a>
+            <br />
+            <a href="https://www.birmingham.ac.uk/">University of Birmingham</a>
           </p>
           <p align="center">
             <br>
@@ -51,59 +131,60 @@
     </tbody>
   </table>
 
-  <hr align="left" size="4" style="margin-top:20px">
 
+<!-- Bio -->
+<h2>About Me [<a href="https://www.linkedin.com/in/linchaobao/">LinkedIn</a>]</h2>
 
-  <!-- Bio -->
-  <h4>About Me [<a href="https://www.linkedin.com/in/linchaobao/">LinkedIn</a>]</h4>
-  
-  I will be joining the <a href="https://www.birmingham.ac.uk/schools/computer-science/index.aspx">School of Computer Science</a> at the <a href="https://www.birmingham.ac.uk/">University of Birmingham</a> in the UK as an Associate Professor in 2024. 
-  Currently, I serve as the Head of AI at <a href="https://unity.cn/">Unity China</a>, a position I've held since February 2023. 
-  Prior to this role, I spent over six years at <a href="http://ai.tencent.com/ailab/">Tencent AI Lab</a>, 
-  where I held the position of Principal Research Scientist and Manager of Digital Human Algorithm Team. 
-  I obtained my M.S. degree in Pattern Recognition and Intelligent Systems from
-  <a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology</a>
-  and a Ph.D. degree in Computer Science from
-  <a href="http://www.cs.cityu.edu.hk/">City University of Hong Kong</a>, under the guidance of <a href="https://scholar.google.com.hk/citations?user=4WirkacAAAAJ&amp;hl=en">Dr. Qingxiong Yang</a>. 
-  Prior to Tencent, I worked as an Algorithm Engineer at 
-  <a href="https://www.dji.com/">DJI</a> from 2015 to 2016.
-  During my doctoral studies, I was a Research Intern at
-  <a href="https://research.adobe.com/">Adobe</a> 
-  from 2013 to 2014, working closely with
-  <a href="https://research.adobe.com/person/hailin-jin/">Dr. Hailin Jin</a>, 
-  <a href="https://research.adobe.com/person/byungmoon-kim/">Dr. Byungmoon Kim</a>, 
-  <a href="https://www.flickr.com/photos/jbury/">Joshua Bury</a>, and
-  <a href="http://people.csail.mit.edu/ericchan/">Eric Chan</a>. 
+<p>I will be joining the <a href="https://www.birmingham.ac.uk/schools/computer-science/index.aspx">School of Computer
+    Science</a> at the <a href="https://www.birmingham.ac.uk/">University of Birmingham</a> in the UK as an Associate
+  Professor in 2024.
+  My research interests focus on Artificial Intelligence for Computer Vision and Graphics, including 3D/4D contents
+  representation/capturing/generation, 3D/4D digital human, image/video generative models, multi-modal foundation
+  models, interpretability and reliability of AI models, etc.
+</p>
 
-	
-	
-	<!--
-  <p>
-    <span style="background-color:rgb(255,255,0)">
-      <b>+. We are looking for <font color="#ff0000">research interns</font> (PhD/master students)
-        to work at Unity China in Shanghai. 
-        The position requires full-time working for <font color="#ff0000">at least 6 months</font>.
-      </b>
-    </span>
-  </p>
+<p>Currently, I serve as the Head of AI at <a href="https://unity.cn/">Unity China</a>, a position I've held since
+  February 2023.
+  Prior to this role, I spent over six years at <a href="http://ai.tencent.com/ailab/">Tencent AI Lab</a>,
+  where I held the position of Principal Research Scientist and Manager.
+  Before that, I was an Algorithm Engineer at
+  <a href="https://www.dji.com/">DJI</a> from 2015 to 2016 and a Research Intern at
+  <a href="https://research.adobe.com/">Adobe</a>
+  from 2013 to 2014.
+  I received my Ph.D. degree in Computer Science from
+  <a href="http://www.cs.cityu.edu.hk/">City University of Hong Kong</a> in 2015,
+  and my M.S. degree in Pattern Recognition and Intelligent Systems from
+  <a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology</a> in 2011.
+</p>
 
-  <p>
-    <span style="background-color:rgb(255,255,0)">
-      <b>+. A few <font color="#ff0000">full-time algorithm engineer</font> positions are available
-        for <font color="#ff0000">fresh graduates</font> (PhD/master) with top publications.
-        Please drop me an email if you are interested.
-      </b>
-    </span>
-  </p>
-  -->
-  
-  
+<div class="infoblock">
+  <div class="blockcontent">
+    <p>
+      <font color=red><b>Opening Positions</b>: </font>
 
-  <hr align="left" size="4" style="margin-top:20px">
+    <ul>
+      <li>
+        <b>PhD Students</b>: 
+        I am seeking self-motivated PhD students to join my team. 
+        <font color=red>Please note that <a
+        href="https://www.birmingham.ac.uk/schools/computer-science/postgraduate-research/applying-for-phd-in-computer-science">the PhD studentship</a> is highly competitive. 
+        Candidates with first-authored top-tier publications such as CVPR/ICCV/ECCV/SIGGRAPH will have a greater chance of being selected. 
+        Students who are self-funded or have external funding should indicate this in their inquiry.</font> 
+        Due to the high volume of inquiries, I apologize in advance that I may not be able to respond to all emails.
+      </li>
+      <li>
+        <b>Visitors</b>: 
+        Visiting students/scholars with external funding like <a href="https://www.csc.edu.cn/article/2613">CSC</a> are welcome to contact me. 
+      </li>
+    </ul>
+    </p>
+  </div>
+</div>
+
 
   <!-- publication -->
-  <h4>Publications [<a href="https://scholar.google.com.hk/citations?user=xQZMbkUAAAAJ&hl=en">Google Scholar
-      Citations</a>]</h4>
+  <h2>Publications [<a href="https://scholar.google.com.hk/citations?user=xQZMbkUAAAAJ&hl=en">Google Scholar
+      Citations</a>]</h2>
 
   <table class="numbertable" cellspacing="10" id="baopublist">
     <tbody>
@@ -804,10 +885,17 @@
     </tbody>
   </table>
 
-  <hr align="left" size="4" style="margin-top:20px">
+
+  <!-- services -->
+  <h2>Professional Services</h2>
+  <ul>
+    <li><b>Area Chair</b>: ECCV 2024</li>
+    <li><b>Reviewer</b>: CVPR, ICCV, ECCV, SIGGRAPH, TPAMI, TIP</li>
+  </ul>
+  
 
   <!-- products -->
-  <h4>Shipped Products</h4>
+  <h2>Shipped Products</h2>
   <ul>
     <li>
       <a href="https://www.dji.com/spark">DJI Spark Drone</a>: IMU-based Electronic Image Stabilization
